@@ -26,7 +26,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		type: 'Software Development',
 		location: 'Home',
 		period: { from: new Date() },
-		skills: getSkills('svelte', 'ts', 'sass', 'css', 'html', 'js'),
+		skills: getSkills('python', 'svelte', 'ts', 'sass', 'css', 'html', 'js'),
 		name: 'Freelancer',
 		color: '#ffffff',
 		links: [],
