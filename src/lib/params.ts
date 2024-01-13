@@ -46,36 +46,36 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 
 export const HOME: HomePageParams = {
 	title: 'Home',
-	name: 'Name',
-	lastName: 'LASTNAME',
+	name: 'Alessio',
+	lastName: 'A',
 	description:
 		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
 	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
+		{ platform: Platform.GitHub, link: 'https://github.com/alessioamo' },
 		{
 			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
+			link: 'https://www.linkedin.com/in/alessio-amorelli-9702211aa/'
 		},
-		{
-			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
-		},
-		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
-		},
+		// {
+		// 	platform: Platform.Twitter,
+		// 	link: 'https://twitter.com/'
+		// },
+		// {
+		// 	platform: Platform.StackOverflow,
+		// 	link: 'https://stackoverflow.com/'
+		// },
 		{
 			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
-		},
-		{
-			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
-		},
-		{
-			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
+			link: 'alessio.amorelli@hotmail.com'
 		}
+		// {
+		// 	platform: Platform.Youtube,
+		// 	link: 'https://www.youtube.com'
+		// },
+		// {
+		// 	platform: Platform.Facebook,
+		// 	link: 'https://www.facebook.com'
+		// }
 	]
 };
 
