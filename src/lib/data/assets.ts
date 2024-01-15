@@ -18,7 +18,7 @@ const Assets = {
 	Unity: a('unity.png'),
 	GitHub: a('github.png'),
 	MySQL: a('mysql.png'),
-	PHP: a('github.png'),
+	PHP: a('php.png'),
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.png'),
 	C: a('c.png'),
