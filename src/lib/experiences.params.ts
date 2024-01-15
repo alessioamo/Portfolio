@@ -4,49 +4,94 @@ import { ContractType, type Experience } from './types';
 
 const MY_EXPERIENCES: Array<Experience> = [
 	{
-		slug: 'open-sourcer',
-		company: 'Self-employed',
-		description: 'Creating awesome tools for developers.',
-		contract: ContractType.SelfEmployed,
-		type: 'Software Development',
+		slug: 'fullstack-web-dev',
+		company: 'Croogloo',
+		description: 'Creating awesome tools for developers.', // TODO
+		contract: ContractType.Internship,
+		type: 'Web Development',
 		location: 'Home',
-		period: { from: new Date() },
-		skills: getSkills('ts', 'js'),
-		name: 'Open Source Developer',
-		color: '#ffffff',
-		links: [],
-		logo: Assets.Unknown,
-		shortDescription: ''
+		period: { from: new Date(2023, 0, 1), to: new Date(2023, 0, 5) },
+		skills: getSkills('js', 'java', 'html', 'css', 'googlecloud', 'github', 'bootstrap', 'vscode'),
+		name: 'Fullstack Web Developer',
+		color: '#ff0000', // TODO
+		links: [], // TODO
+		logo: Assets.Unknown, // TODO
+		shortDescription: 'test' // TODO
 	},
 	{
-		slug: 'software-freelance',
-		company: 'Self-employed',
-		description: 'Creating awesome applications for customers.',
-		contract: ContractType.Freelance,
-		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date() },
-		skills: getSkills('python', 'svelte', 'ts', 'sass', 'css', 'html', 'js'),
-		name: 'Freelancer',
-		color: '#ffffff',
-		links: [],
-		logo: Assets.Unknown,
-		shortDescription: ''
+		slug: 'software-freelance', // TODO
+		company: 'Self-employed', // TODO
+		description: 'Creating awesome applications for customers.', // TODO
+		contract: ContractType.Freelance, // TODO
+		type: 'Software Development', // TODO
+		location: 'Home', // TODO
+		period: { from: new Date() }, // TODO
+		skills: getSkills('python', 'svelte', 'ts', 'sass', 'css', 'html', 'js'), // TODO
+		name: 'Freelancer', // TODO
+		color: '#ffffff', // TODO
+		links: [], // TODO
+		logo: Assets.Unknown, // TODO
+		shortDescription: '' // TODO
 	},
 	{
-		slug: 'software-freelance-junior',
-		company: 'Self-employed',
-		description: 'Creating awesome applications for customers.',
-		contract: ContractType.Freelance,
-		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date(2022, 0, 1), to: new Date() },
-		skills: getSkills('css', 'html', 'js'),
-		name: 'Junior Freelancer',
-		color: '#ffffff',
-		links: [],
-		logo: Assets.Unknown,
-		shortDescription: ''
+		slug: 'software-freelance', // TODO
+		company: 'Self-employed', // TODO
+		description: 'Creating awesome applications for customers.', // TODO
+		contract: ContractType.Freelance, // TODO
+		type: 'Software Development', // TODO
+		location: 'Home', // TODO
+		period: { from: new Date() }, // TODO
+		skills: getSkills('python', 'svelte', 'ts', 'sass', 'css', 'html', 'js'), // TODO
+		name: 'Freelancer', // TODO
+		color: '#ffffff', // TODO
+		links: [], // TODO
+		logo: Assets.Unknown, // TODO
+		shortDescription: '' // TODO
+	},
+	{
+		slug: 'software-freelance', // TODO
+		company: 'Self-employed', // TODO
+		description: 'Creating awesome applications for customers.', // TODO
+		contract: ContractType.Freelance, // TODO
+		type: 'Software Development', // TODO
+		location: 'Home', // TODO
+		period: { from: new Date() }, // TODO
+		skills: getSkills('python', 'svelte', 'ts', 'sass', 'css', 'html', 'js'), // TODO
+		name: 'Freelancer', // TODO
+		color: '#ffffff', // TODO
+		links: [], // TODO
+		logo: Assets.Unknown, // TODO
+		shortDescription: '' // TODO
+	},
+	{
+		slug: 'software-freelance', // TODO
+		company: 'Self-employed', // TODO
+		description: 'Creating awesome applications for customers.', // TODO
+		contract: ContractType.Freelance, // TODO
+		type: 'Software Development', // TODO
+		location: 'Home', // TODO
+		period: { from: new Date() }, // TODO
+		skills: getSkills('python', 'svelte', 'ts', 'sass', 'css', 'html', 'js'), // TODO
+		name: 'Freelancer', // TODO
+		color: '#ffffff', // TODO
+		links: [], // TODO
+		logo: Assets.Unknown, // TODO
+		shortDescription: '' // TODO
+	},
+	{
+		slug: 'software-freelance', // TODO
+		company: 'Self-employed', // TODO
+		description: 'Creating awesome applications for customers.', // TODO
+		contract: ContractType.Freelance, // TODO
+		type: 'Software Development', // TODO
+		location: 'Home', // TODO
+		period: { from: new Date() }, // TODO
+		skills: getSkills('python', 'svelte', 'ts', 'sass', 'css', 'html', 'js'), // TODO
+		name: 'Freelancer', // TODO
+		color: '#ffffff', // TODO
+		links: [], // TODO
+		logo: Assets.Unknown, // TODO
+		shortDescription: '' // TODO
 	}
 ];
 
