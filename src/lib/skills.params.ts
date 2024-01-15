@@ -41,12 +41,164 @@ const MY_SKILLS = [
 		name: 'HTML'
 	}),
 	s({
+		slug: 'java',
+		color: 'orange',
+		description:
+			'Java.',
+		logo: Assets.Java,
+		name: 'Java'
+	}),
+	s({
+		slug: 'mysql',
+		color: 'blue',
+		description:
+			'd',
+		logo: Assets.MySQL,
+		name: 'MySQL'
+	}),
+	s({
 		slug: 'python',
 		color: 'blue',
 		description:
-			'A python is a snake.',
+			'd',
 		logo: Assets.Python,
 		name: 'Python'
+	}),
+	s({
+		slug: 'php',
+		color: 'purple',
+		description:
+			'd',
+		logo: Assets.PHP,
+		name: 'PHP'
+	}),
+	s({
+		slug: 'c',
+		color: 'blue',
+		description:
+			'd',
+		logo: Assets.C,
+		name: 'C'
+	}),
+	s({
+		slug: 'cpp',
+		color: 'blue',
+		description:
+			'd',
+		logo: Assets.Cpp,
+		name: 'C++'
+	}),
+	s({
+		slug: 'csharp',
+		color: 'purple',
+		description:
+			'd',
+		logo: Assets.Csharp,
+		name: 'C#'
+	}),
+	s({
+		slug: 'github',
+		color: 'purple',
+		description:
+			'Ad',
+		logo: Assets.GitHub,
+		name: 'GitHub'
+	}),
+	s({
+		slug: 'unity',
+		color: 'grey',
+		description:
+			'd',
+		logo: Assets.Unity,
+		name: 'Unity'
+	}),
+	s({
+		slug: 'nodejs',
+		color: 'green',
+		description:
+			'd',
+		logo: Assets.NodeJs,
+		name: 'Node.js'
+	}),
+	s({
+		slug: 'bootstrap',
+		color: 'purple',
+		description:
+			'd',
+		logo: Assets.Bootstrap,
+		name: 'Bootstrap'
+	}),
+	s({
+		slug: 'googlecloud',
+		color: 'blue',
+		description:
+			'd',
+		logo: Assets.GoogleCloud,
+		name: 'Google Cloud'
+	}),
+	s({
+		slug: 'vscode',
+		color: 'blue',
+		description:
+			'Ad',
+		logo: Assets.VSCode,
+		name: 'VSCode'
+	}),
+	s({
+		slug: 'eclipse',
+		color: 'purple',
+		description:
+			'd',
+		logo: Assets.Eclipse,
+		name: 'Eclipse'
+	}),
+	s({
+		slug: 'premiere',
+		color: 'purple',
+		description:
+			'd',
+		logo: Assets.Premiere,
+		name: 'Adobe Premiere'
+	}),
+	s({
+		slug: 'photoshop',
+		color: 'blue',
+		description:
+			'd',
+		logo: Assets.Photoshop,
+		name: 'Adobe Photoshop'
+	}),
+	s({
+		slug: 'sonyvegas',
+		color: 'blue',
+		description:
+			'd',
+		logo: Assets.SonyVegas,
+		name: 'Sony Vegas'
+	}),
+	s({
+		slug: 'excel',
+		color: 'green',
+		description:
+			'Ad',
+		logo: Assets.Excel,
+		name: 'Excel'
+	}),
+	s({
+		slug: 'word',
+		color: 'blue',
+		description:
+			'd',
+		logo: Assets.Word,
+		name: 'Word'
+	}),
+	s({
+		slug: 'powerpoint',
+		color: 'red',
+		description:
+			'd',
+		logo: Assets.Powerpoint,
+		name: 'Powerpoint'
 	}),
 	// s({
 	// 	slug: 'sass',
