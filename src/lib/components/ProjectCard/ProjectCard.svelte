@@ -14,7 +14,11 @@
 	export let project: Project;
 	$: months = countMonths(project.period.from, project.period.to);
 	// $: period = `${months} month${months > 1 ? 's' : ''}`;
-	$: period = 1;
+	// Project period here (commented out so doesn't show up)
+	// $: period = `${getTimeDiff(
+	//	project.period.from,
+	//	project.period.to ?? new Date(Date.now() + 1000 * 60 * 60 * 24)
+	// )}`;
 	$: from = `${getMonthName(project.period.from.getMonth())} ${project.period.from.getFullYear()}`;
 	$: to = project.period.to
 		? `${getMonthName(project.period.to.getMonth())} ${project.period.to.getFullYear()}`
