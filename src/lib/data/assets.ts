@@ -13,6 +13,7 @@ const Assets = {
 	Genetec: a('genetec.png'),
 	Laurus: a('laurus.png'),
 	StudentWorks: a('studentworks.png'),
+	Tutor: a('tutor.png'),
 
 	Powerpoint: a('powerpoint.png'),
 	Word: a('word.png'),

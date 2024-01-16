@@ -51,7 +51,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 	{
 		slug: 'tutor',
 		company: 'Self-employed',
-		description: 'Tutored and aided multiple secondary 3 to 5 students in various subjects such as programming, sciences, and maths. Reached objectives in teaching others using different techniques',
+		description: 'Tutored and aided multiple high school and CEGEP students in various subjects such as programming, sciences, and maths. Reached objectives in teaching others using different techniques',
 		contract: ContractType.Freelance,
 		type: 'Tutoring',
 		location: 'Montréal, Québec',
@@ -60,7 +60,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		name: 'Tutor',
 		color: '#ffffff', // TODO
 		links: [],
-		logo: Assets.Unknown, // TODO
+		logo: Assets.Tutor, // TODO
 		shortDescription: '' // TODO
 	},
 	{
