@@ -8,6 +8,12 @@ const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
 
 const Assets = {
+	Croogloo: a('croogloo.png'),
+	Airbus: a('airbus.png'),
+	Genetec: a('genetec.png'),
+	Laurus: a('laurus.png'),
+	StudentWorks: a('studentworks.png'),
+
 	Powerpoint: a('powerpoint.png'),
 	Word: a('word.png'),
 	Excel: a('excel.png'),
@@ -19,6 +25,7 @@ const Assets = {
 	GitHub: a('github.png'),
 	MySQL: a('mysql.png'),
 	PHP: a('php.png'),
+
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.png'),
 	C: a('c.png'),

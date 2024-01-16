@@ -10,12 +10,12 @@ const MY_EXPERIENCES: Array<Experience> = [
 		contract: ContractType.Internship,
 		type: 'Web Development',
 		location: 'Home',
-		period: { from: new Date(2023, 0, 1), to: new Date(2023, 0, 5) },
+		period: { from: new Date(2023, 1, 0), to: new Date(2023, 5, 0) },
 		skills: getSkills('js', 'java', 'html', 'css', 'googlecloud', 'github', 'bootstrap', 'vscode'),
 		name: 'Fullstack Web Developer',
-		color: '#ff0000', // TODO
-		links: [], // TODO
-		logo: Assets.Unknown, // TODO
+		color: '#ffffff', // TODO
+		links: [{ to: 'GitHub', label: 'https://github.com', newTab: true },{ to: 'Google', label: 'https://google.com', newTab: true }], // TODO
+		logo: Assets.Croogloo, // TODO
 		shortDescription: 'test' // TODO
 	},
 	{
