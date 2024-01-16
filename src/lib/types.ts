@@ -45,10 +45,10 @@ export interface Skill extends Omit<Item, 'shortDescription'> {
 export interface Project extends Item {
 	links: Array<Link>;
 	color: string;
-	period: {
-		from: Date;
-		to?: Date;
-	};
+	// period: {
+	// 	from: Date;
+	// 	to?: Date;
+	// };
 	type: string;
 	skills: Array<Skill>;
 }
