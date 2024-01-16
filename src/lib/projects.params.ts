@@ -21,25 +21,26 @@ const MY_PROJECTS: Array<Project> = [
 		screenshots: [ //TODO
 			{
 				label: 'screen 1',
-				src: 'static/screenshots/teachable.png'
+				src: 'https://github.com/alessioamo/Portfolio/blob/main/static/screenshots/teachable.png?raw=true'
 			}
 		]
 	},
 	{
-		slug: 'slick-portfolio-angular', //TODO
+		slug: 'commerce-website',
 		color: '#a300de', //TODO
 		description:
-			'Lorem ipsum', //TODO
+			'Fully functioning website built with JSP and servlets, and linked to a database. ' +
+			'Products, orders, and users connected to a database, cart feature that transfers into orders', //TODO
 		shortDescription:
-			'Lorem', //TODO
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+			'Fully functioning website built with JSP and servlets, and linked to a database.',
+		links: [{ to: 'https://github.com/alessioamo/SOEN387-A1', label: 'GitHub Repo' }],
 		logo: Assets.Unknown, //TODO
-		name: 'Slick Portfolio', //TODO
+		name: 'Commerce Website',
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
 		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
-		type: 'Website Template', //TODO
+		type: 'Website', //TODO
 		screenshots: [ //TODO
 			{
 				label: 'screen 1',
