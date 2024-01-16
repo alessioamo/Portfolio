@@ -8,8 +8,6 @@ const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
 
 const Assets = {
-	TestTemp: a('dbdperkmaker.png'),
-
 	DBDPerkMaker: a('dbdperkmaker.png'),
 
 	Concordia: a('concordia.png'),

@@ -21,7 +21,7 @@ const MY_PROJECTS: Array<Project> = [
 		screenshots: [ //TODO
 			{
 				label: 'screen 1',
-				src: Assets.TestTemp
+				src: 'static/screenshots/teachable.png'
 			}
 		]
 	},

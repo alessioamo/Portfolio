@@ -20,10 +20,12 @@
 	//	project.period.to ?? new Date(Date.now() + 1000 * 60 * 60 * 24)
 	// )}`;
 	$: period = '';
-	$: from = `${getMonthName(project.period.from.getMonth())} ${project.period.from.getFullYear()}`;
-	$: to = project.period.to
-		? `${getMonthName(project.period.to.getMonth())} ${project.period.to.getFullYear()}`
-		: 'now';
+	$: from = '';
+	$: to = '';
+	// $: from = `${getMonthName(project.period.from.getMonth())} ${project.period.from.getFullYear()}`;
+	// $: to = project.period.to
+	//	? `${getMonthName(project.period.to.getMonth())} ${project.period.to.getFullYear()}`
+	//	: 'now';
 </script>
 
 <Card color={project.color} href={`${base}/projects/${project.slug}`}>
