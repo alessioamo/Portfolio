@@ -24,7 +24,7 @@ const MY_PROJECTS: Array<Project> = [
 				src: Assets.TestTemp
 			}
 		]
-	}
+	},
 	{
 		slug: 'slick-portfolio-angular', //TODO
 		color: '#a300de', //TODO
