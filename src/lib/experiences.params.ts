@@ -13,7 +13,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2023, 4, 1), to: new Date(2023, 8, 1) },
 		skills: getSkills('js', 'java', 'html', 'css', 'googlecloud', 'github', 'bootstrap', 'vscode'),
 		name: 'Fullstack Web Developer',
-		color: '#ffffff', // TODO
+		color: '#0aba5a',
 		links: [],
 		logo: Assets.Croogloo,
 		shortDescription: '' // TODO
@@ -28,7 +28,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2022, 4, 1), to: new Date(2022, 8, 1) },
 		skills: getSkills('js', 'java', 'html', 'css', 'bootstrap', 'github', 'eclipse'),
 		name: 'Developer in Technical Publications',
-		color: '#ffffff', // TODO
+		color: '#00205b',
 		links: [],
 		logo: Assets.Airbus,
 		shortDescription: '' // TODO
@@ -43,7 +43,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2022, 0, 1), to: new Date(2022, 4, 20) },
 		skills: getSkills('premiere', 'photoshop'),
 		name: 'Multimedia Production Assistant',
-		color: '#ffffff', // TODO
+		color: '#0a72b1',
 		links: [],
 		logo: Assets.Genetec,
 		shortDescription: '' // TODO
@@ -58,7 +58,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2017, 8, 1), to: new Date(2022, 8, 1) },
 		skills: getSkills(),
 		name: 'Tutor',
-		color: '#ffffff', // TODO
+		color: '#0099dc',
 		links: [],
 		logo: Assets.Tutor, // TODO
 		shortDescription: '' // TODO
@@ -73,7 +73,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2019, 4, 1), to: new Date(2019, 8, 1) },
 		skills: getSkills(),
 		name: 'Camp Counsellor',
-		color: '#ffffff', // TODO
+		color: '#17a2dd',
 		links: [],
 		logo: Assets.Laurus, // TODO
 		shortDescription: '' // TODO
@@ -88,7 +88,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2018, 0, 1), to: new Date(2018, 8, 20) },
 		skills: getSkills(),
 		name: 'Painter and Customer Service',
-		color: '#ffffff', // TODO
+		color: '#e41937',
 		links: [],
 		logo: Assets.StudentWorks,
 		shortDescription: '' // TODO
