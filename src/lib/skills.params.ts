@@ -97,6 +97,14 @@ const MY_SKILLS = [
 		name: 'C#'
 	}),
 	s({
+		slug: 'kotlin',
+		color: 'purple',
+		description:
+			'd',
+		logo: Assets.Kotlin,
+		name: 'Kotlin'
+	}),
+	s({
 		slug: 'github',
 		color: 'purple',
 		description:

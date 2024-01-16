@@ -16,12 +16,24 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('js', 'html', 'css', 'java', 'github'),
+		skills: getSkills('js', 'html', 'css', 'java', 'github', 'vscode'),
 		type: 'Website',
 		screenshots: [ //TODO
 			{
-				label: 'screen 1',
-				src: 'https://github.com/alessioamo/Portfolio/blob/main/static/screenshots/teachable.png?raw=true'
+				label: 'Main Page',
+				src: ''
+			},
+			{
+				label: 'Custom Perks',
+				src: ''
+			},
+			{
+				label: 'Icon Creator',
+				src: ''
+			},
+			{
+				label: 'Holiday Theme',
+				src: ''
 			}
 		]
 	},
@@ -39,8 +51,8 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
-		type: 'Website', //TODO
+		skills: getSkills('js', 'html', 'css', 'java', 'mysql', 'bootstrap', 'github', 'eclipse'),
+		type: 'Website',
 		screenshots: [ //TODO
 			{
 				label: 'screen 1',
@@ -49,20 +61,20 @@ const MY_PROJECTS: Array<Project> = [
 		]
 	},
 	{
-		slug: 'slick-portfolio-angular', //TODO
+		slug: 'family-feud-website',
 		color: '#a300de', //TODO
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
 			'Lorem', //TODO
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+		links: [{ to: 'https://github.com/alessioamo/Family-Feud', label: 'GitHub Repo' }],
 		logo: Assets.Unknown, //TODO
-		name: 'Slick Portfolio', //TODO
+		name: 'Family Feud Game',
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
-		type: 'Website Template', //TODO
+		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
+		type: 'Website',
 		screenshots: [ //TODO
 			{
 				label: 'screen 1',
@@ -71,20 +83,20 @@ const MY_PROJECTS: Array<Project> = [
 		]
 	},
 	{
-		slug: 'slick-portfolio-angular', //TODO
+		slug: 'jeopardy-website',
 		color: '#a300de', //TODO
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
 			'Lorem', //TODO
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+		links: [{ to: 'https://github.com/alessioamo/Jeopardy', label: 'GitHub Repo' }],
 		logo: Assets.Unknown, //TODO
-		name: 'Slick Portfolio', //TODO
+		name: 'Jeopardy Game',
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
-		type: 'Website Template', //TODO
+		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
+		type: 'Website',
 		screenshots: [ //TODO
 			{
 				label: 'screen 1',
@@ -93,20 +105,42 @@ const MY_PROJECTS: Array<Project> = [
 		]
 	},
 	{
-		slug: 'slick-portfolio-angular', //TODO
+		slug: 'scientific-calculator-python',
+		color: '#a300de', //TODO
+		description:
+			'Lorem ipsum', //TODO
+		shortDescription:
+			'Calculator with scientific functions built from scratch in Python without the use of libraries.',
+		links: [{ to: 'https://github.com/alessioamo/ETERNITY-Calculator', label: 'GitHub Repo' }],
+		logo: Assets.Unknown, //TODO
+		name: 'Python Scientific Calculator',
+		period: {
+			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
+		},
+		skills: getSkills('python', 'github', 'vscode'),
+		type: 'Application',
+		screenshots: [ //TODO
+			{
+				label: 'screen 1',
+				src: ''
+			}
+		]
+	},
+	{
+		slug: 'concordia-app',
 		color: '#a300de', //TODO
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
 			'Lorem', //TODO
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
-		logo: Assets.Unknown, //TODO
+		links: [{ to: 'https://github.com/alessioamo/Concordia-For-Students', label: 'GitHub Repo' }],
+		logo: Assets.Concordia, //TODO
 		name: 'Slick Portfolio', //TODO
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
-		type: 'Website Template', //TODO
+		skills: getSkills('kotlin', 'java', 'vscode'),
+		type: 'Mobile Application',
 		screenshots: [ //TODO
 			{
 				label: 'screen 1',
