@@ -3,27 +3,27 @@ import type { Education } from './types';
 
 export const MY_EDUCATIONS: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
-		description: '',
-		location: 'Tunisia',
+		degree: 'Bachelor\'s Degree of Computer Science',
+		description: 'test description',
+		location: 'Montréal, Québec',
 		logo: Assets.Unknown,
-		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		name: 'test name',
+		organization: 'Concordia University',
+		period: { from: new Date(2020, 8, 1), to: new Date(2024, 4, 1) },
 		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		slug: 'education-bachelor',
+		subjects: ['Programming', 'Java', 'Web Development', 'JavaScript', 'HTML', 'CSS', 'MySQL', 'Bootstrap', 'Python', 'C', 'C#', 'C++', 'PHP', 'Data Structures and Algorithms']
 	},
 	{
-		degree: 'PhD of Computer Science',
+		degree: 'DEC in Honours Pure and Applied Science',
 		description: '',
-		location: 'USA',
+		location: 'Montréal, Québec',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		organization: 'Vanier College',
+		period: { from: new Date(2018, 8, 1), to: new Date(2020, 5, 1) },
 		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		slug: 'education-dec',
+		subjects: ['Calculus', 'Mechanics', 'Waves', 'Linear Algebra', 'Chemistry', 'Biology', 'Astrophysics', 'Electricity and Magnetism']
 	}
 ];
