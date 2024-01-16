@@ -40,7 +40,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		contract: ContractType.Internship,
 		type: 'Software',
 		location: 'Montréal, Québec',
-		period: { from: new Date(2022, 0, 1), to: new Date(2022, 4, 1) },
+		period: { from: new Date(2022, 0, 1), to: new Date(2022, 4, 20) },
 		skills: getSkills('premiere', 'photoshop'),
 		name: 'Multimedia Production Assistant',
 		color: '#ffffff', // TODO
@@ -85,7 +85,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		contract: ContractType.FullTime,
 		type: 'Painter and Customer Service',
 		location: 'Montréal, Québec',
-		period: { from: new Date(2018, 0, 1), to: new Date(2018, 8, 1) },
+		period: { from: new Date(2018, 0, 1), to: new Date(2018, 8, 20) },
 		skills: getSkills(),
 		name: 'Painter and Customer Service',
 		color: '#ffffff', // TODO
