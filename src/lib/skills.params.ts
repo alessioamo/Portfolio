@@ -208,6 +208,14 @@ const MY_SKILLS = [
 		logo: Assets.Powerpoint,
 		name: 'Powerpoint'
 	}),
+	s({
+		slug: 'sqlite',
+		color: 'blue',
+		description:
+			'd',
+		logo: Assets.SQLite,
+		name: 'SQLite'
+	}),
 	// s({
 	// 	slug: 'sass',
 	// 	color: 'pink',
