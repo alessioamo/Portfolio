@@ -9,6 +9,15 @@ const a = (light: string, dark?: string): Asset =>
 
 const Assets = {
 	DBDPerkMaker: a('dbdperkmaker.png'),
+	Commerce: a('commerce.png'),
+	FamilyFeud: a('familyfeud.png'),
+	Jeopardy: a('jeopardy.png'),
+	Chess: a('chess.png'),
+	Risk: a('risk.png'),
+	Battleship: a('battleship.png'),
+	Discord: a('discord.png'),
+	Reddit: a('reddit.png'),
+	Stardew: a('stardew.png'),
 
 	Concordia: a('concordia.png'),
 	Vanier: a('vanier.png'),
