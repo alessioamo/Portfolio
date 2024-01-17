@@ -219,7 +219,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
+		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Website Game',
 		screenshots: [ //TODO
 			{
@@ -241,7 +241,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
+		skills: getSkills('c++', 'github', 'vscode'),
 		type: 'Game Application',
 		screenshots: [ //TODO
 			{
@@ -263,7 +263,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
+		skills: getSkills('java', 'github', 'eclipse'),
 		type: 'Game Application',
 		screenshots: [ //TODO
 			{
@@ -285,7 +285,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
+		skills: getSkills('js', 'node', 'github', 'vscode'),
 		type: 'Bot',
 		screenshots: [ //TODO
 			{
@@ -307,7 +307,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
+		skills: getSkills('python', 'github', 'vscode'),
 		type: 'Bot',
 		screenshots: [ //TODO
 			{
@@ -329,7 +329,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'), //TODO
+		skills: getSkills('c#', 'github', 'vscode'),
 		type: 'Video Game Mod',
 		screenshots: [ //TODO
 			{
