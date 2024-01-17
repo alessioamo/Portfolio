@@ -18,6 +18,7 @@ const Assets = {
 	Discord: a('discord.png'),
 	Reddit: a('reddit.png'),
 	Stardew: a('stardew.png'),
+	Calculator: a('calculator.png'),
 
 	Concordia: a('concordia.png'),
 	Vanier: a('vanier.png'),

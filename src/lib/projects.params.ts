@@ -128,7 +128,7 @@ const MY_PROJECTS: Array<Project> = [
 		shortDescription:
 			'Calculator with scientific functions built from scratch in Python without the use of libraries.',
 		links: [{ to: 'https://github.com/alessioamo/ETERNITY-Calculator', label: 'GitHub Repo' }],
-		logo: Assets.ScientificCalculator,
+		logo: Assets.Calculator,
 		name: 'Python Scientific Calculator',
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
