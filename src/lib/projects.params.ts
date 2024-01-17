@@ -39,7 +39,7 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'commerce-website',
-		color: '#a300de', //TODO
+		color: '#359000',
 		description:
 			'Fully functioning website built with JSP and servlets, and linked to a database. ' +
 			'Products, orders, and users connected to a database, cart feature that transfers into orders', //TODO
@@ -122,7 +122,7 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'scientific-calculator-python',
-		color: '#a300de', //TODO
+		color: '#fa980b',
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
@@ -144,7 +144,7 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'concordia-app',
-		color: '#a300de', //TODO
+		color: '#922338',
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
@@ -186,7 +186,7 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'platform-side-scrolling-game',
-		color: '#a300de', //TODO
+		color: '#4c4c4c',
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
@@ -208,7 +208,7 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'chess-minigame-website',
-		color: '#a300de', //TODO
+		color: '#855639',
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
@@ -230,7 +230,7 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'cpp-risk-game',
-		color: '#a300de', //TODO
+		color: '#da3835',
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
@@ -274,7 +274,7 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'discord-bot',
-		color: '#a300de', //TODO
+		color: '#5562ea',
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
@@ -296,7 +296,7 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'reddit-bot',
-		color: '#a300de', //TODO
+		color: '#f74300',
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
@@ -318,7 +318,7 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'stardew-penguin-mod',
-		color: '#ffe1af',
+		color: '#ffc400',
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
