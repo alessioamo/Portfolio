@@ -61,7 +61,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('js', 'html', 'css', 'java', 'mysql', 'sqlite', 'bootstrap', 'github'),
+		skills: getSkills('js', 'html', 'css', 'java', 'mysql', 'bootstrap', 'github'),
 		type: 'Website',
 		screenshots: [ //TODO
 			{
