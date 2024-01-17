@@ -7,7 +7,9 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'dbd-website',
 		color: '#f15400',
 		description:
-			'Lorem ipsum', //TODO
+			'A fully functioning website to create unique icons and descriptions for the popular video game, Dead By Daylight. ' + 
+			'This website can be used to create perks, addons, powers, lore, as well as create new icons using pre-existing in-game icons ' +
+			'and custom drawings. These creations can be saved to the user\'s device and will save as a png image with a transparent background.',
 		shortDescription:
 			'A website to create icons and descriptions for the popular video game Dead By Daylight.',
 		links: [{ to: 'https://dbdperkmaker.ca/', label: 'dbdperkmaker.ca' }, { to: 'https://github.com/alessioamo/dbdperkmaker', label: 'GitHub Repo' }],
@@ -41,8 +43,16 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'commerce-website',
 		color: '#359000',
 		description:
-			'Fully functioning website built with JSP and servlets, and linked to a database. ' +
-			'Products, orders, and users connected to a database, cart feature that transfers into orders', //TODO
+			'Fully functioning website built with JSP and servlets, and linked to a database. Product, order, and user information is stored in the database.' +
+			'<br>• Home page with a custom JS animation' +
+			'<br>• Products page with a list of products that can be filtered, opened in a new tab for more information, or added to cart' +
+			'<br>• Cart page where you can view all the currently added products, change the quantity, remove from cart, view full price, or place your order to a specific shipping address (a new order will be created with the current cart items)' +
+			'<br>• Login page where you can login to a pre-existing account, or create a new account' +
+			'<br>• When logged in, users have the same functionalities as before as well as new ones such as an orders page, and a user information page' +
+			'<br>• On the orders page, users can view all of their placed orders, the order information, and if they have been shipped or not (with a tracking number)' +
+			'<br>• On the user page, users can view their information, change their password, or claim an order that they placed while not logged in' +
+			'<br>• If the logged in user is an admin, they gain extra functionalities' +
+			'<br>• These include adding, deleting, or editing products, viewing a list of all products and their quantities, viewing orders of all users, shipping the orders with their tracking number, or changing permissions of other users',
 		shortDescription:
 			'Fully functioning website built with JSP and servlets, and linked to a database.',
 		links: [{ to: 'https://github.com/alessioamo/SOEN387-A1', label: 'GitHub Repo' }],
@@ -230,18 +240,18 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'grocery-store-website',
-		color: '#a300de', //TODO
+		color: '#04688E',
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
 			'Lorem', //TODO
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
-		logo: Assets.Unknown, //TODO
+		logo: Assets.Grocery,
 		name: 'Grocery Store Website',
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('js', 'html', 'css', 'java', 'mysql', 'bootstrap', 'github', 'vscode'), //TODO
+		skills: getSkills('js', 'html', 'css', 'java', 'mysql', 'bootstrap', 'github', 'vscode'),
 		type: 'Website',
 		screenshots: [ //TODO
 			{
@@ -263,7 +273,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('c++', 'github', 'vscode'),
+		skills: getSkills('cpp', 'github', 'vscode'),
 		type: 'Game Application',
 		screenshots: [ //TODO
 			{
@@ -344,7 +354,7 @@ const MY_PROJECTS: Array<Project> = [
 		description:
 			'Lorem ipsum', //TODO
 		shortDescription:
-			'Lorem', //TODO
+			'A mod for the popular farming game Stardew Valley that adds a new animal, the penguin, with many variations to it and new custom items.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
 		logo: Assets.Stardew,
 		name: 'Stardew Valley Animal Mod',
@@ -355,7 +365,15 @@ const MY_PROJECTS: Array<Project> = [
 		type: 'Video Game Mod',
 		screenshots: [ //TODO
 			{
-				label: 'screen 1',
+				label: 'Penguins In Game',
+				src: ''
+			},
+			{
+				label: 'Penguin Drops',
+				src: ''
+			},
+			{
+				label: 'Penguin Sprite Sheet',
 				src: ''
 			}
 		]
