@@ -153,6 +153,14 @@ const MY_SKILLS = [
 		name: 'Google Cloud'
 	}),
 	s({
+		slug: 'jira',
+		color: 'blue',
+		description:
+			'Ad',
+		logo: Assets.Jira,
+		name: 'Jira'
+	}),
+	s({
 		slug: 'vscode',
 		color: 'blue',
 		description:

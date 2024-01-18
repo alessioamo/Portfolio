@@ -2,6 +2,8 @@ import Assets from './data/assets';
 import { getSkills } from './skills.params';
 import type { Project } from './types';
 
+// Max 7 skills per project to keep panels the same size
+
 const MY_PROJECTS: Array<Project> = [
 	{
 		slug: 'dbd-website',

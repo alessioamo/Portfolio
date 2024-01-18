@@ -26,7 +26,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		type: 'Web Development',
 		location: 'Mirabel, Québec',
 		period: { from: new Date(2022, 4, 1), to: new Date(2022, 8, 1) },
-		skills: getSkills('js', 'java', 'html', 'css', 'bootstrap', 'github', 'eclipse'),
+		skills: getSkills('js', 'java', 'html', 'css', 'bootstrap', 'jira', 'github', 'eclipse'),
 		name: 'Developer in Technical Publications',
 		color: '#00205b',
 		links: [],

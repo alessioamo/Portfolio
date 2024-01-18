@@ -43,6 +43,7 @@ const Assets = {
 	MySQL: a('mysql.png'),
 	PHP: a('php.png'),
 	SQLite: a('sqlite.png'),
+	Jira: a('jira.png'),
 
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.png'),
