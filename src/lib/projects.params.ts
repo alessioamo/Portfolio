@@ -71,6 +71,10 @@ const MY_PROJECTS: Array<Project> = [
 				src: ''
 			},
 			{
+				label: 'Products Page',
+				src: ''
+			},
+			{
 				label: 'Cart Page',
 				src: ''
 			},
@@ -101,6 +105,10 @@ const MY_PROJECTS: Array<Project> = [
 				src: ''
 			},
 			{
+				label: 'Example Game',
+				src: ''
+			},
+			{
 				label: 'Host Page',
 				src: ''
 			}
@@ -110,7 +118,18 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'jeopardy-website',
 		color: '#45066f',
 		description:
-			'Lorem ipsum', //TODO
+			'Webpage that recreates the hit trivia game Jeopardy. Features include:' +
+			'<br>• Fully functioning board of clues' +
+			'<br>• Ability to create your own clues and categories' +
+			'<br>• Fully animated board, cards, and daily double' +
+			'<br>• Daily double feature and final jeopardy feature' +
+			'<br>• Automated point system that facilitates giving/taking points (if a $400 clue is selected, pressing the \'+\' or \'-\' will automatically increment/decrement by 400)' +
+			'<br>• Custom intro video with ability to add your own' +
+			'<br>• Full sound effects for intro, daily double, final jeopardy, timer, etc.' +
+			'<br>• Buzzer functionality that displays first team that buzzed in yellow and any subsequent buzzes are possible once the original buzzer has failed the clue' +
+			'<br>• Customizable time limit feature for response length, time to buzz, and more' +
+			'<br>• Ability to add more teams/players as well as customize the team\'s color and name' +
+			'<br>• All parameters are customizable to enable/disable various features of the game (such as sound effects, intro video, daily double, and more)',
 		shortDescription:
 			'Webpage built with JavaScript, CSS, and HTML to create your own Jeopardy game.',
 		links: [{ to: 'https://github.com/alessioamo/Jeopardy', label: 'GitHub Repo' }],
@@ -127,7 +146,11 @@ const MY_PROJECTS: Array<Project> = [
 				src: ''
 			},
 			{
-				label: 'Question Example',
+				label: 'Example Game',
+				src: ''
+			},
+			{
+				label: 'Clue Example',
 				src: ''
 			}
 		]
