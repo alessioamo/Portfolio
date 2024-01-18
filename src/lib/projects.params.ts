@@ -25,19 +25,19 @@ const MY_PROJECTS: Array<Project> = [
 		screenshots: [ //TODO
 			{
 				label: 'Main Page',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-main-page.png'
 			},
 			{
 				label: 'Custom Perks',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-perk-page.png'
 			},
 			{
 				label: 'Icon Creator',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-icon-creator.png'
 			},
 			{
 				label: 'Holiday Theme',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-holiday-theme.png'
 			}
 		]
 	},
@@ -68,19 +68,19 @@ const MY_PROJECTS: Array<Project> = [
 		screenshots: [ //TODO
 			{
 				label: 'Main Page',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/commerce-main-page.png'
 			},
 			{
 				label: 'Products Page',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/commerce-products-page.png'
 			},
 			{
 				label: 'Cart Page',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/commerce-cart-page.png'
 			},
 			{
 				label: 'Orders Page',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/commerce-orders-page.png'
 			}
 		]
 	},
@@ -102,15 +102,15 @@ const MY_PROJECTS: Array<Project> = [
 		screenshots: [ //TODO
 			{
 				label: 'Gameshow Page',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/family-feud-gameshow-page.png'
 			},
 			{
 				label: 'Example Game',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/family-feud-example-game.png'
 			},
 			{
 				label: 'Host Page',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/family-feud-host-page.png'
 			}
 		]
 	},
@@ -143,15 +143,15 @@ const MY_PROJECTS: Array<Project> = [
 		screenshots: [ //TODO
 			{
 				label: 'Jeopardy Board',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/jeopardy-board.png'
 			},
 			{
 				label: 'Example Game',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/jeopardy-example-game.png'
 			},
 			{
 				label: 'Clue Example',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/jeopardy-clue.png'
 			}
 		]
 	},

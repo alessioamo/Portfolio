@@ -49,7 +49,7 @@ export const HOME: HomePageParams = {
 	name: 'Alessio',
 	lastName: 'A',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		'My Portfolio website is currently under development and will be completed soon. Feel free to browse the sections that are complete!',
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/alessioamo' },
 		{
