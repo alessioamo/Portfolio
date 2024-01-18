@@ -90,7 +90,7 @@
 					>
 						{#each screenshots as item}
 							<div class="col-center gap-3 overflow-hidden w-100% h-100% rounded-10px">
-								<img class="aspect-video w-100%" src={item.src} alt={item.label} />
+								<img class="aspect-video w-200%" src={item.src} alt={item.label} />
 								<p class="text-[var(--tertiary-text)] font-300">{item.label}</p>
 							</div>
 						{/each}
