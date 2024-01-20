@@ -1,4 +1,4 @@
-import type { Color } from './utils/colors';color:
+import type { Color } from './utils/colors';
 
 export enum Platform {
 	GitHub = 'github',
