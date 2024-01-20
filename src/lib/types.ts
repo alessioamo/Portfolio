@@ -1,3 +1,5 @@
+import type { Color } from './utils/colors';color:
+
 export enum Platform {
 	GitHub = 'github',
 	StackOverflow = 'stackoverflow',
@@ -39,7 +41,7 @@ export interface IconLink extends Link {
 }
 
 export interface Skill extends Omit<Item, 'shortDescription'> {
-	color: string;
+	color: Color;
 }
 
 export interface Project extends Item {
