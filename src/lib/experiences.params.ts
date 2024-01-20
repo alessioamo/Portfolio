@@ -13,7 +13,8 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2023, 4, 1), to: new Date(2023, 8, 1) },
 		skills: getSkills('js', 'java', 'html', 'css', 'googlecloud', 'github', 'bootstrap', 'vscode'),
 		name: 'Fullstack Web Developer',
-		color: '#0aba5a',
+		//color: '#0aba5a',
+		color: 'red',
 		links: [],
 		logo: Assets.Croogloo,
 		shortDescription: '' // TODO
@@ -28,7 +29,8 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2022, 4, 1), to: new Date(2022, 8, 1) },
 		skills: getSkills('js', 'java', 'html', 'css', 'bootstrap', 'jira', 'github', 'eclipse'),
 		name: 'Developer in Technical Publications',
-		color: '#00205b',
+		//color: '#00205b',
+		color: 'red',
 		links: [],
 		logo: Assets.Airbus,
 		shortDescription: '' // TODO
@@ -43,7 +45,8 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2022, 0, 1), to: new Date(2022, 4, 20) },
 		skills: getSkills('premiere', 'photoshop'),
 		name: 'Multimedia Production Assistant',
-		color: '#0a72b1',
+		//color: '#0a72b1',
+		color: 'red',
 		links: [],
 		logo: Assets.Genetec,
 		shortDescription: '' // TODO
@@ -58,7 +61,8 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2017, 8, 1), to: new Date(2022, 8, 1) },
 		skills: getSkills(),
 		name: 'Tutor',
-		color: '#0099dc',
+		//color: '#0099dc',
+		color: 'red',
 		links: [],
 		logo: Assets.Tutor, // TODO
 		shortDescription: '' // TODO
@@ -73,7 +77,8 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2019, 4, 1), to: new Date(2019, 8, 1) },
 		skills: getSkills(),
 		name: 'Camp Counsellor',
-		color: '#17a2dd',
+		//color: '#17a2dd',
+		color: 'red',
 		links: [],
 		logo: Assets.Laurus, // TODO
 		shortDescription: '' // TODO
@@ -88,7 +93,8 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2018, 0, 1), to: new Date(2018, 8, 20) },
 		skills: getSkills(),
 		name: 'Painter and Customer Service',
-		color: '#e41937',
+		//color: '#e41937',
+		color: 'red',
 		links: [],
 		logo: Assets.StudentWorks,
 		shortDescription: '' // TODO
