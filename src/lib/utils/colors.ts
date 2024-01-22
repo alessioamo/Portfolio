@@ -145,7 +145,15 @@ export const NAMED_COLORS = {
 	white: '#FFFFFF',
 	whitesmoke: '#F5F5F5',
 	yellow: '#FFFF00',
-	yellowgreen: '#9ACD32'
+	yellowgreen: '#9ACD32',
+
+	croogloo: '#0aba5a',
+	airbus: '#00205b',
+	genetec: '#0a72b1',
+	tutor: '#0099dc',
+	laurus: '#17a2dd',
+	student: '#e41937'
+	
 } as const;
 
 export type NamedColor = keyof typeof NAMED_COLORS;
