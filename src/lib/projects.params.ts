@@ -190,7 +190,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('kotlin', 'java', 'vscode'),
+		skills: getSkills('kotlin', 'java', 'figma', 'vscode'),
 		type: 'Mobile Application',
 		screenshots: [ //TODO
 			{

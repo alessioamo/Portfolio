@@ -11,7 +11,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		type: 'Web Development',
 		location: 'Montréal, Québec',
 		period: { from: new Date(2023, 4, 1), to: new Date(2023, 8, 1) },
-		skills: getSkills('js', 'java', 'html', 'css', 'googlecloud', 'github', 'bootstrap', 'vscode'),
+		skills: getSkills('js', 'java', 'html', 'css', 'googlecloud', 'figma', 'bootstrap', 'github', 'vscode'),
 		name: 'Fullstack Web Developer',
 		color: 'croogloo',
 		links: [],
