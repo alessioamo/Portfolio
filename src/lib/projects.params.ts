@@ -381,11 +381,11 @@ const MY_PROJECTS: Array<Project> = [
 			},
 			{
 				label: 'Example Commands 1',
-				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/discord-commands-1.png'
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/discord-example-commands-1.png'
 			},
 			{
 				label: 'Example Commands 2',
-				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/discord-commands-2.png'
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/discord-example-commands-2.png'
 			}
 		]
 	},
