@@ -92,7 +92,7 @@
 						{#each screenshots as item}
 							<div class="col-center gap-3 overflow-hidden w-100% h-100% rounded-10px">
 								<!-- <img class="aspect-video w-100%" src={item.src} alt={item.label} /> -->
-								<img class="aspect-video w-100% object-cover" src={item.src} alt={item.label} onclick={`window.open('${item.src}', '_blank');`}/>
+								<img class="aspect-video w-100% object-contain" src={item.src} alt={item.label} onclick={`window.open('${item.src}', '_blank');`}/>
 								<p class="text-[var(--tertiary-text)] font-300">{item.label}</p>
 							</div>
 
