@@ -178,11 +178,11 @@ const MY_PROJECTS: Array<Project> = [
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/calculator-calculator.png'
 			},
 			{
-				label: 'Calculator Error',
+				label: 'Calculator Example',
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/calculator-example.png'
 			},
 			{
-				label: 'Calculator Example',
+				label: 'Calculator Error',
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/calculator-error.png'
 			}
 		]
@@ -380,11 +380,11 @@ const MY_PROJECTS: Array<Project> = [
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/discord-help-command.png'
 			},
 			{
-				label: 'Example Commands 1',
+				label: 'Example Command 1',
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/discord-example-commands-1.png'
 			},
 			{
-				label: 'Example Commands 2',
+				label: 'Example Command 2',
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/discord-example-commands-2.png'
 			}
 		]
