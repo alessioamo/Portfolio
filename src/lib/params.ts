@@ -20,7 +20,7 @@ export const NavBar = {
 	home: 'Home',
 	personal: 'Projects',
 	career: 'Experiences',
-	// resume: 'Resume',
+	resume: 'Resume',
 	skills: 'Skills',
 	Education: 'Education'
 };
