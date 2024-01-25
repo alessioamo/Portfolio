@@ -45,6 +45,7 @@ const Assets = {
 	SQLite: a('sqlite.png'),
 	Jira: a('jira.png'),
 	Figma: a('figma.png'),
+	AndroidStudio: a('androidstudio.png'),
 
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.png'),

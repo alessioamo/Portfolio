@@ -90,7 +90,7 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'family-feud-website',
 		color: '#f99f21',
 		description:
-			'Lorem ipsum', //TODO
+			'Coming soon!', //TODO
 		shortDescription:
 			'Webpage built with JavaScript, CSS, and HTML to create your own Family Feud game.',
 		links: [{ to: 'https://github.com/alessioamo/Family-Feud', label: 'GitHub Repo' }],
@@ -161,7 +161,7 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'scientific-calculator-python',
 		color: '#fa980b',
 		description:
-			'Lorem ipsum', //TODO
+			'Coming soon!', //TODO
 		shortDescription:
 			'Calculator with scientific functions built from scratch in Python without the use of libraries.',
 		links: [{ to: 'https://github.com/alessioamo/ETERNITY-Calculator', label: 'GitHub Repo' }],
@@ -191,16 +191,16 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'concordia-app',
 		color: '#922338',
 		description:
-			'Lorem ipsum', //TODO
+			'Coming soon!', //TODO
 		shortDescription:
-			'Lorem', //TODO
+			'A mobile application for students in university to efficiently organize themselves, and stay on top of their studies.', //TODO
 		links: [{ to: 'https://github.com/alessioamo/Concordia-For-Students', label: 'GitHub Repo' }],
 		logo: Assets.Concordia,
 		name: 'Recreated School Application',
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('kotlin', 'java', 'figma', 'vscode'),
+		skills: getSkills('kotlin', 'java', 'figma', 'androidstudio', 'vscode'),
 		type: 'Mobile Application',
 		screenshots: [
 			{
@@ -233,7 +233,7 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'platform-side-scrolling-game',
 		color: '#4c4c4c',
 		description:
-			'Lorem ipsum', //TODO
+			'Coming soon!', //TODO
 		shortDescription:
 			'2D Side-scrolling platforming game using Unity.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
@@ -281,9 +281,9 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'grocery-store-website',
 		color: '#04688E',
 		description:
-			'Lorem ipsum', //TODO
+			'Coming soon!', //TODO
 		shortDescription:
-			'Lorem', //TODO
+			'Fully functioning grocery store website built with HTML, JavaScript, PHP, and linked to a database.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
 		logo: Assets.Grocery,
 		name: 'Grocery Store Website',
@@ -319,7 +319,7 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'cpp-risk-game',
 		color: '#da3835',
 		description:
-			'Lorem ipsum', //TODO
+			'Coming soon!', //TODO
 		shortDescription:
 			'C++ program that simulates the game Risk against other players and/or a computer that can use different strategies.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
@@ -341,7 +341,7 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'java-battleship-game',
 		color: '#1f9386',
 		description:
-			'Lorem ipsum', //TODO
+			'Coming soon!', //TODO
 		shortDescription:
 			'Java program that simulates the game Battleship against a computer.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
@@ -363,7 +363,7 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'discord-bot',
 		color: '#5562ea',
 		description:
-			'Lorem ipsum', //TODO
+			'Coming soon!', //TODO
 		shortDescription:
 			'Discord Bot that responds and reacts to user entered commands.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
@@ -393,7 +393,7 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'reddit-bot',
 		color: '#f74300',
 		description:
-			'Lorem ipsum', //TODO
+			'Coming soon!', //TODO
 		shortDescription:
 			'Reddit Bot that scans through subreddits and automatically replies to posts and comments based on their content.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
@@ -423,7 +423,7 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'stardew-penguin-mod',
 		color: '#ffc400',
 		description:
-			'Lorem ipsum', //TODO
+			'Coming soon!', //TODO
 		shortDescription:
 			'A mod for the popular farming game Stardew Valley that adds a new animal, the penguin, with many variations to it and new custom items.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO

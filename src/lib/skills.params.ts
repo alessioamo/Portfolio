@@ -12,7 +12,7 @@ const MY_SKILLS = [
 		slug: 'js',
 		color: 'yellow',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.JavaScript,
 		name: 'Javascript'
 	}),
@@ -28,7 +28,7 @@ const MY_SKILLS = [
 		slug: 'css',
 		color: 'blue',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.CSS,
 		name: 'CSS'
 	}),
@@ -36,7 +36,7 @@ const MY_SKILLS = [
 		slug: 'html',
 		color: 'orange',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.HTML,
 		name: 'HTML'
 	}),
@@ -52,7 +52,7 @@ const MY_SKILLS = [
 		slug: 'mysql',
 		color: 'blue',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.MySQL,
 		name: 'MySQL'
 	}),
@@ -60,7 +60,7 @@ const MY_SKILLS = [
 		slug: 'sqlite',
 		color: 'blue',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.SQLite,
 		name: 'SQLite'
 	}),
@@ -68,7 +68,7 @@ const MY_SKILLS = [
 		slug: 'python',
 		color: 'blue',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Python,
 		name: 'Python'
 	}),
@@ -76,7 +76,7 @@ const MY_SKILLS = [
 		slug: 'php',
 		color: 'purple',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.PHP,
 		name: 'PHP'
 	}),
@@ -84,7 +84,7 @@ const MY_SKILLS = [
 		slug: 'c',
 		color: 'blue',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.C,
 		name: 'C'
 	}),
@@ -92,7 +92,7 @@ const MY_SKILLS = [
 		slug: 'cpp',
 		color: 'blue',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Cpp,
 		name: 'C++'
 	}),
@@ -100,7 +100,7 @@ const MY_SKILLS = [
 		slug: 'csharp',
 		color: 'purple',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Csharp,
 		name: 'C#'
 	}),
@@ -108,7 +108,7 @@ const MY_SKILLS = [
 		slug: 'kotlin',
 		color: 'purple',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Kotlin,
 		name: 'Kotlin'
 	}),
@@ -116,7 +116,7 @@ const MY_SKILLS = [
 		slug: 'github',
 		color: 'purple',
 		description:
-			'Ad',
+			'Coming soon!',
 		logo: Assets.GitHub,
 		name: 'GitHub'
 	}),
@@ -124,7 +124,7 @@ const MY_SKILLS = [
 		slug: 'unity',
 		color: 'grey',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Unity,
 		name: 'Unity'
 	}),
@@ -132,7 +132,7 @@ const MY_SKILLS = [
 		slug: 'nodejs',
 		color: 'green',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.NodeJs,
 		name: 'Node.js'
 	}),
@@ -140,15 +140,23 @@ const MY_SKILLS = [
 		slug: 'bootstrap',
 		color: 'purple',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Bootstrap,
 		name: 'Bootstrap'
+	}),
+	s({
+		slug: 'androidstudio',
+		color: 'green',
+		description:
+			'Coming soon!',
+		logo: Assets.AndroidStudio,
+		name: 'Android Studio'
 	}),
 	s({
 		slug: 'googlecloud',
 		color: 'blue',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.GoogleCloud,
 		name: 'Google Cloud'
 	}),
@@ -156,7 +164,7 @@ const MY_SKILLS = [
 		slug: 'figma',
 		color: 'purple',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Figma,
 		name: 'Figma'
 	}),
@@ -164,7 +172,7 @@ const MY_SKILLS = [
 		slug: 'jira',
 		color: 'blue',
 		description:
-			'Ad',
+			'Coming soon!',
 		logo: Assets.Jira,
 		name: 'Jira'
 	}),
@@ -172,7 +180,7 @@ const MY_SKILLS = [
 		slug: 'vscode',
 		color: 'blue',
 		description:
-			'Ad',
+			'Coming soon!',
 		logo: Assets.VSCode,
 		name: 'VSCode'
 	}),
@@ -180,7 +188,7 @@ const MY_SKILLS = [
 		slug: 'eclipse',
 		color: 'purple',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Eclipse,
 		name: 'Eclipse'
 	}),
@@ -188,7 +196,7 @@ const MY_SKILLS = [
 		slug: 'premiere',
 		color: 'purple',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Premiere,
 		name: 'Adobe Premiere'
 	}),
@@ -196,7 +204,7 @@ const MY_SKILLS = [
 		slug: 'photoshop',
 		color: 'blue',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Photoshop,
 		name: 'Adobe Photoshop'
 	}),
@@ -204,7 +212,7 @@ const MY_SKILLS = [
 		slug: 'sonyvegas',
 		color: 'blue',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.SonyVegas,
 		name: 'Sony Vegas'
 	}),
@@ -212,7 +220,7 @@ const MY_SKILLS = [
 		slug: 'excel',
 		color: 'green',
 		description:
-			'Ad',
+			'Coming soon!',
 		logo: Assets.Excel,
 		name: 'Excel'
 	}),
@@ -220,7 +228,7 @@ const MY_SKILLS = [
 		slug: 'word',
 		color: 'blue',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Word,
 		name: 'Word'
 	}),
@@ -228,7 +236,7 @@ const MY_SKILLS = [
 		slug: 'powerpoint',
 		color: 'red',
 		description:
-			'd',
+			'Coming soon!',
 		logo: Assets.Powerpoint,
 		name: 'Powerpoint'
 	}),
