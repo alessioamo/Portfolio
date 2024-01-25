@@ -4,6 +4,8 @@ import type { Project } from './types';
 
 // Max 7 skills per project to keep panels the same size
 
+// Pictures to do: Java, Risk, Platformer, Stardew
+
 const MY_PROJECTS: Array<Project> = [
 	{
 		slug: 'dbd-website',
@@ -22,7 +24,7 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('js', 'html', 'css', 'java', 'github', 'vscode'),
 		type: 'Website',
-		screenshots: [ //TODO
+		screenshots: [
 			{
 				label: 'Main Page',
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-main-page.png'
@@ -65,7 +67,7 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('js', 'html', 'css', 'java', 'mysql', 'bootstrap', 'github'),
 		type: 'Website',
-		screenshots: [ //TODO
+		screenshots: [
 			{
 				label: 'Main Page',
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/commerce-main-page.png'
@@ -99,7 +101,7 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Website',
-		screenshots: [ //TODO
+		screenshots: [
 			{
 				label: 'Gameshow Page',
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/family-feud-gameshow-page.png'
@@ -140,7 +142,7 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Website',
-		screenshots: [ //TODO
+		screenshots: [
 			{
 				label: 'Jeopardy Board',
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/jeopardy-board.png'
@@ -170,10 +172,18 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('python', 'github', 'vscode'),
 		type: 'Application',
-		screenshots: [ //TODO
+		screenshots: [
 			{
-				label: 'screen 1',
-				src: ''
+				label: 'Calculator',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/calculator-calculator.png'
+			},
+			{
+				label: 'Calculator Error',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/calculator-example.png'
+			},
+			{
+				label: 'Calculator Example',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/calculator-error.png'
 			}
 		]
 	},
@@ -192,30 +202,30 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('kotlin', 'java', 'figma', 'vscode'),
 		type: 'Mobile Application',
-		screenshots: [ //TODO
+		screenshots: [
 			{
 				label: 'Home Page',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/concordia-home-page.png'
 			},
 			{
 				label: 'Task List Feature',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/concordia-task-list.png'
 			},
 			{
 				label: 'Maps Feature',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/concordia-maps.png'
 			},
 			{
 				label: 'Shuttle Schedule',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/concordia-shuttle-schedule.png'
 			},
 			{
 				label: 'STM Schedule',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/concordia-stm-schedule.png'
 			},
 			{
 				label: 'Library Occupancy',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/concordia-library-occupancy.png'
 			}
 		]
 	},
@@ -235,17 +245,21 @@ const MY_PROJECTS: Array<Project> = [
 		skills: getSkills('csharp', 'unity', 'github', 'vscode'),
 		type: 'Video Game',
 		screenshots: [ //TODO
-			{
-				label: 'screen 1',
-				src: ''
-			}
+			// {
+			// 	label: 'Player Running In Level',
+			// 	src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/platformer-side-scroller-running.png'
+			// },
+			// {
+			// 	label: 'Sprite Sheet',
+			// 	src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/platformer-side-scroller-sprite-sheet.png'
+			// }
 		]
 	},
 	{
 		slug: 'chess-minigame-website',
 		color: '#855639',
 		description:
-			'Lorem ipsum', //TODO
+			'Please note that this project is currently under development and has placeholder images and layouts.', //TODO
 		shortDescription:
 			'Online Chess minigame where you control a King on a chessboard and must outlast other pieces.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
@@ -256,10 +270,10 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Website Game',
-		screenshots: [ //TODO
+		screenshots: [
 			{
-				label: 'screen 1',
-				src: ''
+				label: 'Chess Board With Pieces',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/chess-board.png'
 			}
 		]
 	},
@@ -278,10 +292,26 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('js', 'html', 'css', 'mysql', 'php', 'bootstrap', 'github'),
 		type: 'Website',
-		screenshots: [ //TODO
+		screenshots: [
 			{
-				label: 'screen 1',
-				src: ''
+				label: 'Main Page',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/grocery-main-page.png'
+			},
+			{
+				label: 'Sign In Page',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/grocery-sign-in-page.png'
+			},
+			{
+				label: 'Product Page',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/grocery-product-page.png'
+			},
+			{
+				label: 'Cart Page',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/grocery-cart-page.png'
+			},
+			{
+				label: 'Backstore Page',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/grocery-backstore-page.png'
 			}
 		]
 	},
@@ -301,10 +331,10 @@ const MY_PROJECTS: Array<Project> = [
 		skills: getSkills('cpp', 'github', 'vscode'),
 		type: 'Game Application',
 		screenshots: [ //TODO
-			{
-				label: 'screen 1',
-				src: ''
-			}
+			// {
+			// 	label: 'Game Log',
+			// 	src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/risk-game-log.png'
+			// }
 		]
 	},
 	{
@@ -323,10 +353,10 @@ const MY_PROJECTS: Array<Project> = [
 		skills: getSkills('java', 'github', 'eclipse'),
 		type: 'Game Application',
 		screenshots: [ //TODO
-			{
-				label: 'screen 1',
-				src: ''
-			}
+			// {
+			// 	label: 'Game Board',
+			// 	src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/battleship-game-board.png'
+			// }
 		]
 	},
 	{
@@ -344,10 +374,18 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('js', 'nodejs', 'github', 'vscode'),
 		type: 'Bot',
-		screenshots: [ //TODO
+		screenshots: [
 			{
-				label: 'screen 1',
-				src: ''
+				label: 'Help Command',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/discord-help-command.png'
+			},
+			{
+				label: 'Example Commands 1',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/discord-commands-1.png'
+			},
+			{
+				label: 'Example Commands 2',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/discord-commands-2.png'
 			}
 		]
 	},
@@ -366,10 +404,18 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('python', 'github', 'vscode'),
 		type: 'Bot',
-		screenshots: [ //TODO
+		screenshots: [
 			{
-				label: 'screen 1',
-				src: ''
+				label: 'Bot Reply',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/reddit-bot-reply-1.png'
+			},
+			{
+				label: 'Bot Reply Based On Unique Message 1',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/reddit-bot-reply-2.png'
+			},
+			{
+				label: 'Bot Reply Based On Unique Message 2',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/reddit-bot-reply-3.png'
 			}
 		]
 	},
@@ -389,17 +435,21 @@ const MY_PROJECTS: Array<Project> = [
 		skills: getSkills('csharp', 'github', 'vscode'),
 		type: 'Video Game Mod',
 		screenshots: [ //TODO
-			{
-				label: 'Penguins In Game',
-				src: ''
-			},
-			{
-				label: 'Penguin Drops',
-				src: ''
-			},
+			// {
+			// 	label: 'Penguins In Game',
+			// 	src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/stardew-penguins-in-game.png'
+			// },
+			// {
+			// 	label: 'Penguin Drops',
+			// 	src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/stardew-penguin-drops.png'
+			// },
+			// {
+			// 	label: 'Penguin In Store',
+			// 	src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/stardew-penguin-store.png'
+			// },
 			{
 				label: 'Penguin Sprite Sheet',
-				src: ''
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/stardew-penguin-sprite-sheet.png'
 			}
 		]
 	}
