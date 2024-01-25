@@ -44,7 +44,7 @@ const MY_SKILLS = [
 		slug: 'java',
 		color: 'orange',
 		description:
-			'Java.',
+			'Comaing soon!',
 		logo: Assets.Java,
 		name: 'Java'
 	}),
