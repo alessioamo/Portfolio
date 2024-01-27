@@ -124,7 +124,7 @@ const MY_SKILLS = [
 		slug: 'unity',
 		color: 'grey',
 		description:
-			'Coming soon!<script>var test = document.createElement(\'p\'); test.textContent = \'This is a dynamically created paragraph element!\';</script><p style=color:red;>hello</p>',
+			'Coming soon!<p id="test" style=color:red;>hello</p><script>var test = document.getElementById(\'test\'); test.textContent = \'This is a dynamically created paragraph element!\';</script>',
 		logo: Assets.Unity,
 		name: 'Unity'
 	}),
