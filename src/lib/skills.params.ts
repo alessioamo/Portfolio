@@ -12,7 +12,8 @@ const MY_SKILLS = [
 		slug: 'js',
 		color: 'yellow',
 		description:
-			'JavaScript is a dynamic programming language that\'s used for web development, in web applications, for game development, and lots more. It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS. <br>- https://www.freecodecamp.org/news/what-is-javascript-definition-of-js',
+			'JavaScript is a dynamic programming language that\'s used for web development, in web applications, for game development, and lots more. It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS.' +
+			'<br><p style="font-style:italic;color:#666;border-left: 2px solid #333;">- https://www.freecodecamp.org/news/what-is-javascript-definition-of-js</p>',
 		logo: Assets.JavaScript,
 		name: 'Javascript'
 	}),
