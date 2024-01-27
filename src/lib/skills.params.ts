@@ -124,7 +124,7 @@ const MY_SKILLS = [
 		slug: 'unity',
 		color: 'grey',
 		description:
-			'Coming soon!<p id="test" onclick="ff()" style=color:red;>hello</p><script>function ff() {document.getElementById("test").innerHTML = "NEW";}</script>',
+			'Coming soon!',
 		logo: Assets.Unity,
 		name: 'Unity'
 	}),
