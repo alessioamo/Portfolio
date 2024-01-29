@@ -8,6 +8,42 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
+		slug: 'dbd-website',
+		color: '#f15400',
+		description:
+			'A fully functioning website to create unique icons and descriptions for the popular video game, Dead By Daylight. ' + 
+			'This website can be used to create perks, addons, powers, lore, as well as create new icons using pre-existing in-game icons ' +
+			'and custom drawings. These creations can be saved to the user\'s device and will save as a png image with a transparent background.',
+		shortDescription:
+			'A website to create icons and descriptions for the popular video game Dead By Daylight.',
+		links: [{ to: 'https://dbdperkmaker.ca/', label: 'dbdperkmaker.ca' }, { to: 'https://github.com/alessioamo/dbdperkmaker', label: 'GitHub Repo' }],
+		logo: Assets.DBDPerkMaker,
+		name: 'DBD Perk Maker',
+		period: {
+			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
+		},
+		skills: getSkills('js', 'html', 'css', 'java', 'github', 'vscode'),
+		type: 'Website',
+		screenshots: [
+			{
+				label: 'Main Page',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-main-page.png'
+			},
+			{
+				label: 'Custom Perks',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-perk-page.png'
+			},
+			{
+				label: 'Icon Creator',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-icon-creator.png'
+			},
+			{
+				label: 'Holiday Theme',
+				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-holiday-theme.png'
+			}
+		]
+	},
+	{
 		slug: 'puzzle-platformer',
 		color: '#4c4c4c',
 		description:
@@ -50,42 +86,6 @@ const MY_PROJECTS: Array<Project> = [
 			{
 				label: 'screen 1',
 				src: ''
-			}
-		]
-	},
-	{
-		slug: 'dbd-website',
-		color: '#f15400',
-		description:
-			'A fully functioning website to create unique icons and descriptions for the popular video game, Dead By Daylight. ' + 
-			'This website can be used to create perks, addons, powers, lore, as well as create new icons using pre-existing in-game icons ' +
-			'and custom drawings. These creations can be saved to the user\'s device and will save as a png image with a transparent background.',
-		shortDescription:
-			'A website to create icons and descriptions for the popular video game Dead By Daylight.',
-		links: [{ to: 'https://dbdperkmaker.ca/', label: 'dbdperkmaker.ca' }, { to: 'https://github.com/alessioamo/dbdperkmaker', label: 'GitHub Repo' }],
-		logo: Assets.DBDPerkMaker,
-		name: 'DBD Perk Maker',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
-		skills: getSkills('js', 'html', 'css', 'java', 'github', 'vscode'),
-		type: 'Website',
-		screenshots: [
-			{
-				label: 'Main Page',
-				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-main-page.png'
-			},
-			{
-				label: 'Custom Perks',
-				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-perk-page.png'
-			},
-			{
-				label: 'Icon Creator',
-				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-icon-creator.png'
-			},
-			{
-				label: 'Holiday Theme',
-				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/dbd-holiday-theme.png'
 			}
 		]
 	},
