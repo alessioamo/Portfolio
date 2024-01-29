@@ -47,7 +47,7 @@ const MY_PROJECTS: Array<Project> = [
 		slug: 'puzzle-platformer',
 		color: '#4c4c4c',
 		description:
-			'This project is currently under development and is set to release in the coming months!', //TODO
+			'This project is currently under development and is set to release in the coming months! Links and screenshots will be updated then!', //TODO
 		shortDescription:
 			'A 2D puzzle platforming game focused on unique abilities acquired through levels.',
 		links: [{ to: '', label: 'Itch.io Page' },
@@ -60,17 +60,17 @@ const MY_PROJECTS: Array<Project> = [
 		skills: getSkills('csharp', 'unity', 'github', 'vscode'),
 		type: 'Video Game',
 		screenshots: [ //TODO
-			{
-				label: 'screen 1',
-				src: ''
-			}
+			// {
+			// 	label: 'screen 1',
+			// 	src: ''
+			// }
 		]
 	},
 	{
 		slug: 'stardew-idle-game',
 		color: '#ffc400',
 		description:
-			'This project is currently under development and is set to release in the coming months!', //TODO
+			'This project is currently under development and is set to release in the coming months! Links and screenshots will be updated then!', //TODO
 		shortDescription:
 			'An idle web game based on the popular video game, Stardew Valley.',
 		links: [{ to: '', label: 'Webpage' },
@@ -83,10 +83,10 @@ const MY_PROJECTS: Array<Project> = [
 		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Website Game',
 		screenshots: [ //TODO
-			{
-				label: 'screen 1',
-				src: ''
-			}
+			// {
+			// 	label: 'screen 1',
+			// 	src: ''
+			// }
 		]
 	},
 	{
