@@ -8,6 +8,52 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
+		slug: 'puzzle-platformer',
+		color: '#4c4c4c',
+		description:
+			'This project is currently under development and is set to release in the coming months!', //TODO
+		shortDescription:
+			'A 2D puzzle platforming game focused on unique abilities acquired through levels.',
+		links: [{ to: '', label: 'Itch.io Page' },
+				{ to: '', label: 'GitHub Repo' }], //TODO
+		logo: Assets.Unity,
+		name: '2D Puzzle Platformer Game',
+		period: {
+			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
+		},
+		skills: getSkills('csharp', 'unity', 'github', 'vscode'),
+		type: 'Video Game',
+		screenshots: [ //TODO
+			{
+				label: 'screen 1',
+				src: ''
+			}
+		]
+	},
+	{
+		slug: 'stardew-idle-game',
+		color: '#ffc400',
+		description:
+			'This project is currently under development and is set to release in the coming months!', //TODO
+		shortDescription:
+			'An idle web game based on the popular video game, Stardew Valley.',
+		links: [{ to: '', label: 'Webpage' },
+				{ to: '', label: 'GitHub Repo' }], //TODO
+		logo: Assets.Stardew,
+		name: 'Stardew Valley Idle Game',
+		period: {
+			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
+		},
+		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
+		type: 'Website Game',
+		screenshots: [ //TODO
+			{
+				label: 'screen 1',
+				src: ''
+			}
+		]
+	},
+	{
 		slug: 'dbd-website',
 		color: '#f15400',
 		description:
@@ -236,7 +282,7 @@ const MY_PROJECTS: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'2D Side-scrolling platforming game using Unity.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Unity,
 		name: 'Side Scrolling Platformer Game',
 		period: {
@@ -262,7 +308,7 @@ const MY_PROJECTS: Array<Project> = [
 			'Please note that this project is currently under development and has placeholder images and layouts.', //TODO
 		shortDescription:
 			'Online Chess minigame where you control a King on a chessboard and must outlast other pieces.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Chess,
 		name: 'Chess Minigame',
 		period: {
@@ -284,7 +330,7 @@ const MY_PROJECTS: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'Fully functioning grocery store website built with HTML, JavaScript, PHP, and linked to a database.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Grocery,
 		name: 'Grocery Store Website',
 		period: {
@@ -322,7 +368,7 @@ const MY_PROJECTS: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'C++ program that simulates the game Risk against other players and/or a computer that can use different strategies.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Risk,
 		name: 'Risk Game',
 		period: {
@@ -344,7 +390,7 @@ const MY_PROJECTS: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'Java program that simulates the game Battleship against a computer.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Battleship,
 		name: 'Battleship Game',
 		period: {
@@ -366,7 +412,7 @@ const MY_PROJECTS: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'Discord Bot that responds and reacts to user entered commands.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Discord,
 		name: 'Discord Bot',
 		period: {
@@ -396,7 +442,8 @@ const MY_PROJECTS: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'Reddit Bot that scans through subreddits and automatically replies to posts and comments based on their content.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+		links: [{ to: 'https://www.reddit.com/user/Jack-Sparrow_Bot/', label: 'Bot Reddit Account' },
+				{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Reddit,
 		name: 'Reddit Bot',
 		period: {
@@ -426,7 +473,7 @@ const MY_PROJECTS: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'A mod for the popular farming game Stardew Valley that adds a new animal, the penguin, with many variations to it and new custom items.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }], //TODO
+		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Stardew,
 		name: 'Stardew Valley Animal Mod',
 		period: {
