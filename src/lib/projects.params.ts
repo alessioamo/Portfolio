@@ -67,7 +67,7 @@ const MY_PROJECTS: Array<Project> = [
 		]
 	},
 	{
-		slug: 'stardew-idle-game',
+		slug: 'stardew-idle-web-game',
 		color: '#ffc400',
 		description:
 			'This project is currently under development and is set to release in the coming months! Links and screenshots will be updated then!', //TODO
