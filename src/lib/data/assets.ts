@@ -9,6 +9,9 @@ const a = (light: string, dark?: string): Asset =>
 
 const Assets = {
 	DBDPerkMaker: a('dbdperkmaker.png'),
+	Blog: a('blog.png'),
+	Scramblecoin: a('scramblecoin.png'),
+	ZombieApocalypse: a('zombieapocalypse.png'),
 	Commerce: a('commerce.png'),
 	FamilyFeud: a('familyfeud.png'),
 	Jeopardy: a('jeopardy.png'),
@@ -24,6 +27,7 @@ const Assets = {
 	Concordia: a('concordia.png'),
 	Vanier: a('vanier.png'),
 
+	Cryopak: a('cryopak.png'),
 	Croogloo: a('croogloo.png'),
 	Airbus: a('airbus.png'),
 	Genetec: a('genetec.png'),

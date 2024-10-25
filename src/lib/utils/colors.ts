@@ -147,6 +147,7 @@ export const NAMED_COLORS = {
 	yellow: '#FFFF00',
 	yellowgreen: '#9ACD32',
 
+	cryopak: '#00c4ea',
 	croogloo: '#0aba5a',
 	airbus: '#00205b',
 	genetec: '#0a72b1',

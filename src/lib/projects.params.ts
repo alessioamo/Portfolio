@@ -13,7 +13,8 @@ const MY_PROJECTS: Array<Project> = [
 		description:
 			'A fully functioning website to create unique icons and descriptions for the popular video game, Dead By Daylight. ' + 
 			'This website can be used to create perks, addons, powers, lore, as well as create new icons using pre-existing in-game icons ' +
-			'and custom drawings. These creations can be saved to the user\'s device and will save as a png image with a transparent background.',
+			'and custom drawings. These creations can be saved to the user\'s device and will save as a png image with a transparent background. ' +
+			'This website is frequently updated with new features, improvements, and interactions.',
 		shortDescription:
 			'A website to create icons and descriptions for the popular video game Dead By Daylight.',
 		links: [{ to: 'https://dbdperkmaker.ca/', label: 'dbdperkmaker.ca' }, { to: 'https://github.com/alessioamo/dbdperkmaker', label: 'GitHub Repo' }],
@@ -22,7 +23,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: {
 			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
 		},
-		skills: getSkills('js', 'html', 'css', 'java', 'github', 'vscode'),
+		skills: getSkills('js', 'html', 'css', 'java', 'googlecloud', 'github', 'vscode'),
 		type: 'Website',
 		screenshots: [
 			{
@@ -44,13 +45,15 @@ const MY_PROJECTS: Array<Project> = [
 		]
 	},
 	{
-		slug: 'puzzle-platformer',
+		slug: 'chroma-game',
 		color: '#4c4c4c',
 		description:
-			'This project is currently under development and is set to release in the coming months! Links and screenshots will be updated then!', //TODO
+			'A 2D puzzle platformer built in the Unity game engine. In this game, you contorl a character that progresses through levels and gains new abilities with each victory. Using their newfound abilities, the player must navigate increasingly difficult puzzles to beat the game and find out the truth about this colorful world.' +
+			'This project was meant to be my first full fledged game and was created as practice to help me learn more about game development.' +
+			'Images coming soon!', //TOdO
 		shortDescription:
-			'A 2D puzzle platforming game focused on unique abilities acquired through levels.',
-		links: [{ to: '', label: 'Itch.io Page' },
+			'A puzzle platformer about navigating a colorful world and finding out the truth behind the shades.',
+		links: [{ to: '', label: 'Itch.io Page' }, //TODO
 				{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Unity,
 		name: '2D Puzzle Platformer Game',
@@ -61,7 +64,126 @@ const MY_PROJECTS: Array<Project> = [
 		type: 'Video Game',
 		screenshots: [ //TODO
 			// {
-			// 	label: 'screen 1',
+			// 	label: 'Main Menu',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Puzzle 1',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Puzzle 2',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Puzzle 3',
+			// 	src: ''
+			// }
+		]
+	},
+	{
+		slug: 'blog-website',
+		color: '#4c4c4c',
+		description:
+			'This website is a blog that I started since the day I graduated. I aim to upload posts every 4-8 weeks depending on how busy I am and how big my current projects are.' + 
+			'The main goal of this blog was to keep myself active and creative and to expand my knowledge and pursue my passion of coding!' +
+			'Images coming soon!', //TOdO
+		shortDescription:
+			'A blog website that follows a University graduate and what comes next for them.',
+		links: [{ to: 'https://alessioamo.github.io/What-Comes-Next/', label: 'Webpage' },
+				{ to: 'https://github.com/alessioamo/What-Comes-Next', label: 'GitHub Repo' }],
+		logo: Assets.Blog,
+		name: 'Blog Website',
+		period: {
+			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
+		},
+		skills: getSkills('js', 'html', 'css', 'googlecloud', 'bootstrap', 'github', 'vscode'),
+		type: 'Website',
+		screenshots: [ //TODO
+			// {
+			// 	label: 'Home Page',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Post Page',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Comments',
+			// 	src: ''
+			// }
+		]
+	},
+	{
+		slug: 'scramblecoin-web-game',
+		color: '#d678d2',
+		description:
+			'A recreation of the minigame called \'Scramblecoin\' from the hit video game Disney Dreamlight Valley. In this minigame, two players (one player and one CPU) go head to head to try and gather as many coins as they can in 5 rounds.' + 
+			'They use up to 5 unique pieces that have their own movements and abilities to travel across a chessboard filled with obstacles and different values of coins. Whoever has the most coins at the end wins!' +
+			'There is actually a lot of strategy to this game and it can get quite fun to play however you can only play in game against CPU\'s. The goal of recreating it was to allow players to play against each other and to also create a more challenging option against smarter AI\'s.' +
+			'It would also allow for more types of gamemodes and the ability to change up the base game which gives freedom to players.' +
+			'Images coming soon!', //TOdO
+		shortDescription:
+			'An web game inspired by the hit video game Disney Dreamlight Valley.',
+		links: [{ to: '', label: 'Webpage' }, //TODO
+				{ to: '', label: 'GitHub Repo' }], //TODO
+		logo: Assets.Scramblecoin,
+		name: 'Scramblecoin Web Game',
+		period: {
+			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
+		},
+		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
+		type: 'Website Game',
+		screenshots: [ //TODO
+			// {
+			// 	label: 'Main Menu',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Character Select',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Gameplay 1',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Gameplay 2',
+			// 	src: ''
+			// }
+		]
+	},
+	{
+		slug: 'zombie-apocalypse-web-game',
+		color: '#0c9c00',
+		description:
+			'This project is currently under development and is set to release in the coming months! Links and screenshots will be updated then!', //TODO
+		shortDescription:
+			'An strategy web game based on making tough choices and taking risks to survive the apocalypse.',
+		links: [{ to: '', label: 'Webpage' },
+				{ to: '', label: 'GitHub Repo' }], //TODO
+		logo: Assets.ZombieApocalypse,
+		name: 'Strategy Web Game',
+		period: {
+			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
+		},
+		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
+		type: 'Website Game',
+		screenshots: [ //TODO
+			// {
+			// 	label: 'Main Menu',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Game Screen',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Journal',
+			// 	src: ''
+			// },
+			// {
+			// 	label: 'Encounter',
 			// 	src: ''
 			// }
 		]
