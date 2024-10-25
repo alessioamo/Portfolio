@@ -50,7 +50,7 @@ const MY_PROJECTS: Array<Project> = [
 		description:
 			'A 2D puzzle platformer built in the Unity game engine. In this game, you contorl a character that progresses through levels and gains new abilities with each victory. Using their newfound abilities, the player must navigate increasingly difficult puzzles to beat the game and find out the truth about this colorful world.' +
 			'This project was meant to be my first full fledged game and was created as practice to help me learn more about game development.' +
-			'Images coming soon!', //TOdO
+			'<br>Images coming soon!', //TOdO
 		shortDescription:
 			'A puzzle platformer about navigating a colorful world and finding out the truth behind the shades.',
 		links: [{ to: '', label: 'Itch.io Page' }, //TODO
@@ -87,7 +87,7 @@ const MY_PROJECTS: Array<Project> = [
 		description:
 			'This website is a blog that I started since the day I graduated. I aim to upload posts every 4-8 weeks depending on how busy I am and how big my current projects are.' + 
 			'The main goal of this blog was to keep myself active and creative and to expand my knowledge and pursue my passion of coding!' +
-			'Images coming soon!', //TOdO
+			'<br>Images coming soon!', //TOdO
 		shortDescription:
 			'A blog website that follows a University graduate and what comes next for them.',
 		links: [{ to: 'https://alessioamo.github.io/What-Comes-Next/', label: 'Webpage' },
@@ -122,7 +122,7 @@ const MY_PROJECTS: Array<Project> = [
 			'They use up to 5 unique pieces that have their own movements and abilities to travel across a chessboard filled with obstacles and different values of coins. Whoever has the most coins at the end wins!' +
 			'There is actually a lot of strategy to this game and it can get quite fun to play however you can only play in game against CPU\'s. The goal of recreating it was to allow players to play against each other and to also create a more challenging option against smarter AI\'s.' +
 			'It would also allow for more types of gamemodes and the ability to change up the base game which gives freedom to players.' +
-			'Images coming soon!', //TOdO
+			'<br>Images coming soon!', //TOdO
 		shortDescription:
 			'An web game inspired by the hit video game Disney Dreamlight Valley.',
 		links: [{ to: '', label: 'Webpage' }, //TODO

@@ -10,7 +10,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		contract: ContractType.Contract,
 		type: 'Software Development',
 		location: 'Montréal, Québec',
-		period: { from: new Date(2024, 8, 5), to: new Date(2024, 11, 5) },
+		period: { from: new Date(2024, 7, 5), to: new Date(2024, 11, 5) },
 		skills: getSkills('php', 'mysql', 'js', 'python', 'ts', 'html', 'css', 'figma', 'bootstrap', 'github', 'vscode'),
 		name: 'Software Developer',
 		color: 'cryopak',
