@@ -1,113 +1,83 @@
 <script lang="ts">
-	import CardDivider from '$lib/components/Card/CardDivider.svelte';
-	import CardLogo from '$lib/components/Card/CardLogo.svelte';
-	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
-	import MY_EXPERIENCES from '$lib/experiences.params';
-	import MY_PROJECTS from '$lib/projects.params';
+	import BasePage from '$lib/components/common/base-page/base-page.svelte';
+	import EmptyResult from '$lib/components/common/empty-result/empty-result.svelte';
+	import FancyBanner from '$lib/components/common/fancy-banner/fancy-banner.svelte';
+	import EmptyMarkdown from '$lib/components/common/markdown/empty-markdown.svelte';
+	import Markdown from '$lib/components/common/markdown/markdown.svelte';
+	import { Badge } from '$lib/components/ui/badge';
+	import Separator from '$lib/components/ui/separator/separator.svelte';
+	import H1 from '$lib/components/ui/typography/h1.svelte';
+	import Muted from '$lib/components/ui/typography/muted.svelte';
+	import Assets from '$lib/data/assets';
+	import ExperienceData from '$lib/data/experience';
+	import ProjectsData from '$lib/data/projects';
+	import type { Skill } from '$lib/data/types';
+	import { href } from '$lib/utils';
+	import { mode } from 'mode-watcher';
 
-	import { base } from '$app/paths';
-	import type { Skill } from '$lib/types';
-	import { getAssetURL } from '$lib/data/assets';
-	import { SKILLS } from '$lib/params';
-	import Markdown from '$lib/components/Markdown.svelte';
-	import TabTitle from '$lib/components/TabTitle.svelte';
-	import Chip from '$lib/components/Chip/Chip.svelte';
-	import Banner from '$lib/components/Banner/Banner.svelte';
-	import UIcon from '$lib/components/Icon/UIcon.svelte';
+	let { data }: { data: { item?: Skill } } = $props();
 
-	type Related = {
-		display: string;
-		name: string;
-		img: string;
-		type: 'projects' | 'experience';
-		url: string;
-	};
+	let title = $derived(`${data?.item?.name ?? 'Not Found'} - Skills`);
+	let banner = $derived(
+		($mode == 'dark' ? data?.item?.logo.dark : data.item?.logo.light) ?? Assets.Unknown.light
+	);
 
-	export let data: { skill?: Skill };
+	let related = $derived(
+		(() => {
+			const current = data.item;
 
-	const { title } = SKILLS;
+			if (!current) return [];
 
-	const getRelatedProjects = (): Array<Related> => {
-		const out: Array<Related> = [];
+			const items: Array<{ name: string; logo: string; link: string }> = [];
 
-		const skill = data.skill;
+			ProjectsData.items.forEach((it) => {
+				if (it.skills.find((skill) => skill.slug === current.slug)) {
+					items.push({
+						link: `/projects/${it.slug}`,
+						logo: $mode === 'dark' ? it.logo.dark : it.logo.light,
+						name: it.name
+					});
+				}
+			});
 
-		if (!skill) {
-			return [];
-		}
+			ExperienceData.items.forEach((it) => {
+				if (it.skills.find((skill) => skill.slug === current.slug)) {
+					items.push({
+						link: `/experience/${it.slug}`,
+						logo: $mode === 'dark' ? it.logo.dark : it.logo.light,
+						name: it.name
+					});
+				}
+			});
 
-		MY_PROJECTS.forEach((item) => {
-			if (item.skills.some((tech) => tech.slug === skill.slug)) {
-				out.push({
-					img: getAssetURL(item.logo),
-					display: `${item.name} (${item.type})`,
-					name: item.name,
-					type: 'projects',
-					url: `/projects/${item.slug}`
-				});
-			}
-		});
-		MY_EXPERIENCES.forEach((item) => {
-			if (item.skills.some((tech) => tech.slug === skill.slug)) {
-				out.push({
-					img: getAssetURL(item.logo),
-					display: `${item.name} @ ${item.company}`,
-					name: item.name,
-					type: 'experience',
-					url: `/experience/${item.slug}`
-				});
-			}
-		});
-
-		return out;
-	};
-
-	$: computedTitle = data.skill ? `${data.skill.name} - ${title}` : title;
-
-	$: related = data.skill ? getRelatedProjects() : [];
+			return items;
+		})()
+	);
 </script>
 
-<TabTitle title={computedTitle} />
-
-<div class="pb-10 overflow-x-hidden col flex-1">
-	{#if data.skill === undefined}
-		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)]">
-			<UIcon icon="i-carbon-software-resource-cluster" classes="text-3.5em" />
-			<p class="font-300">Could not load skill data.</p>
-		</div>
+<BasePage {title}>
+	{#if !data.item}
+		<EmptyResult />
 	{:else}
-		<div class="flex flex-col items-center overflow-x-hidden">
-			<Banner img={getAssetURL(data.skill.logo)}>
-				<MainTitle>{data.skill.name}</MainTitle>
-			</Banner>
-			<div class="pt-3 pb-1 overflow-x-hidden w-full">
-				<div class="px-10px m-y-5">
-					{#if data.skill.description}
-						<Markdown content={data.skill.description ?? 'This place is yet to be filled...'} />
-					{:else}
-						<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
-							<UIcon icon="i-carbon-text-font" classes="text-3.5em" />
-							<p class="font-300">No description</p>
-						</div>
-					{/if}
-				</div>
+		<FancyBanner img={banner}>
+			<H1>{data.item.name}</H1>
+		</FancyBanner>
+		<Separator />
+		{#if data.item.description.trim()}
+			<Markdown content={data.item.description} />
+		{:else}
+			<EmptyMarkdown />
+		{/if}
+		<Separator />
+		{#if related.length !== 0}
+			<div class="flex flex-row flex-wrap items-center gap-2 px-4 py-4">
+				<Muted>Related items</Muted>
+				{#each related as item}
+					<a href={href(item.link)}>
+						<Badge>{item.name}</Badge>
+					</a>
+				{/each}
 			</div>
-			<div class="self-stretch mb-2">
-				<CardDivider />
-			</div>
-			<div class="flex flex-row gap-1 self-stretch flex-wrap ">
-				<div class="px-10px">
-					{#each related as item}
-						<Chip
-							classes="inline-flex flex-row items-center justify-center"
-							href={`${base}${item.url}`}
-						>
-							<CardLogo src={item.img} alt={item.name} radius={'0px'} size={15} classes="mr-2" />
-							<span class="text-[0.9em]">{item.display}</span>
-						</Chip>
-					{/each}
-				</div>
-			</div>
-		</div>
+		{/if}
 	{/if}
-</div>
+</BasePage>

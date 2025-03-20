@@ -1,82 +1,49 @@
 <script lang="ts">
-	import Card from '$lib/components/Card/Card.svelte';
-	import Chip from '$lib/components/Chip/Chip.svelte';
-	import UIcon from '$lib/components/Icon/UIcon.svelte';
-	import SearchPage from '$lib/components/SearchPage.svelte';
-	import { getAssetURL } from '$lib/data/assets';
+	import EmptyResult from '$lib/components/common/empty-result/empty-result.svelte';
+	import SearchPage from '$lib/components/common/search-page/search-page.svelte';
+	import EducationCard from '$lib/components/education/education-card.svelte';
+	import Icon from '$lib/components/ui/icon/icon.svelte';
+	import EducationData from '$lib/data/education';
 
-	import { EDUCATION } from '$lib/params';
-	import type { Education } from '$lib/types';
-	import { getTimeDiff } from '$lib/utils';
+	let search = $state('');
 
-	const { items, title } = EDUCATION;
+	let result = $derived(
+		EducationData.items.filter(
+			(it) =>
+				it.name.toLowerCase().includes(search.toLowerCase()) ||
+				it.description.toLowerCase().includes(search) ||
+				it.location.toLowerCase().includes(search) ||
+				it.degree.toLowerCase().includes(search) ||
+				it.organization.toLowerCase().includes(search)
+		)
+	);
 
-	let search = '';
-
-	let result: Array<Education> = items;
-
-	const onSearch = (ev: CustomEvent<{ search: string }>) => {
-		const s = ev.detail.search;
-
-		result = items.filter((it) => {
-			return (
-				it.degree.toLowerCase().includes(s) ||
-				it.description.toLowerCase().includes(s) ||
-				it.location.toLowerCase().includes(s) ||
-				it.name.toLowerCase().includes(s) ||
-				it.organization.toLowerCase().includes(s) ||
-				it.subjects.some((it) => it.toLowerCase().includes(s))
-			);
-		});
-	};
+	const onSearch = (query: string) => (search = query);
 </script>
 
-<SearchPage {title} {search} on:search={onSearch}>
-	<div class="col items-center relative mt-10 flex-1">
-		{#if result.length === 0}
-			<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
-				<UIcon icon="i-carbon-development" classes="text-3.5em" />
-				<p class="font-300">Could not find anything...</p>
-			</div>
-		{:else}
-			<div
-				class="w-[0.5px] hidden lg:flex top-0 bottom-0 py-50px bg-[var(--border)] absolute rounded"
-			/>
-			{#each result as education, index (education.slug)}
-				<div
-					class={`flex ${
-						index % 2 !== 0 ? 'flex-row' : 'flex-row-reverse'
-					} relative items-center w-full my-[10px]`}
-				>
-					<div class="flex-1 hidden lg:flex" />
-					<div class="hidden lg:inline p-15px bg-[var(--main)] rounded">
-						<UIcon icon="i-carbon-condition-point" />
+<SearchPage title={EducationData.title} {onSearch}>
+	{#if result.length === 0}
+		<EmptyResult />
+	{:else}
+		<div class="flex flex-col gap-6 lg:gap-0">
+			{#each result as it, index (it.slug)}
+				<div class={`flex ${index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row'} gap-4`}>
+					<div class="flex flex-1 flex-col justify-center lg:py-[50px]">
+						<EducationCard {it} />
 					</div>
-					<div class="col flex-1 items-stretch">
-						<Card>
-							<div class="flex-1 col gap-2 items-stretch">
-								<img
-									src={getAssetURL(education.logo)}
-									alt={education.organization}
-									height="50"
-									width="50"
-									class="mb-5"
-								/>
-								<div class="text-[1.3em]">{education.degree}</div>
-								<div>{education.organization}</div>
-								<div class="text-[var(--accent-text)] text-[0.9em] font-200 mb-2">
-									{education.location} · {getTimeDiff(education.period.from, education.period.to)}
-								</div>
-								<div class="row flex-wrap gap-1">
-									{#each education.subjects as subject}
-										<Chip>{subject}</Chip>
-									{/each}
-								</div>
-							</div>
-						</Card>
+					<div
+						class="hidden h-[full] min-w-0 flex-shrink-0 flex-col items-center lg:flex"
+						style="--color: hsl(var(--border) / var(--tw-border-opacity, 1)); --icon: hsl(var(--foreground) / var(--tw-border-opacity, 1))"
+					>
+						<div class="w-[1px] flex-1 bg-[--color]"></div>
+						<div class="my-2 text-[--icon]">
+							<Icon icon="i-carbon-radio-button-checked" />
+						</div>
+						<div class="w-[1px] flex-1 bg-[--color]"></div>
 					</div>
+					<div class="hidden min-w-0 flex-1 flex-shrink-0 flex-row lg:flex"></div>
 				</div>
 			{/each}
-		{/if}
-	</div>
+		</div>
+	{/if}
 </SearchPage>
