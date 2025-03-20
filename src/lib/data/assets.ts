@@ -69,7 +69,23 @@ const Assets = {
 	Jest: asset('jest.png'),
 	Unocss: asset('unocss.svg'),
 	Ruvy: asset('ruvy.svg'),
-	Postcss: asset('postcss.svg')
+	Postcss: asset('postcss.svg'),
+
+	MySQL: asset('mysql.png'),
+	SQLite: asset('sqlite.png'),
+	PHP: asset('php.png'),
+	Github: asset('github.png'),
+	Unity: asset('unity.png'),
+	AndroidStudio: asset('andoird.png'),
+	GoogleCloud: asset('googlecloud.png'),
+	Figma: asset('figma.png'),
+	Jira: asset('jira.png'),
+	VSCode: asset('vscode.png'),
+	Eclipse: asset('eclipse.png'),
+	SonyVegas: asset('sonyvegas.png'),
+	PowerPoint: asset('powerpoint.png'),
+	Excel: asset('excel.png'),
+	Word: asset('word.png'),
 };
 
 export default Assets;

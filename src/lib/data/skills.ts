@@ -18,7 +18,9 @@ const categories = [
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
-	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
+	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' }),
+	defineSkillCategory({ name: 'Tools and Technologies', slug: 'tech' }),
+	defineSkillCategory({ name: 'Misc', slug: 'misc' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -83,7 +85,7 @@ const items = [
 		slug: 'js',
 		color: 'yellow',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Coming soon!',
 		logo: Assets.JavaScript,
 		name: 'Javascript',
 		category: 'pro-lang'
@@ -92,16 +94,25 @@ const items = [
 		slug: 'ts',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Coming soon!',
 		logo: Assets.TypeScript,
 		name: 'Typescript',
 		category: 'pro-lang'
 	}),
 	defineSkill({
+		slug: 'reactjs',
+		color: 'cyan',
+		description:
+			'Coming soon!',
+		logo: Assets.ReactJs,
+		name: 'React Js',
+		category: 'library'
+	}),
+	defineSkill({
 		slug: 'css',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Coming soon!',
 		logo: Assets.CSS,
 		name: 'CSS',
 		category: 'markup-style'
@@ -110,37 +121,245 @@ const items = [
 		slug: 'html',
 		color: 'orange',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Coming soon!',
 		logo: Assets.HTML,
 		name: 'HTML',
 		category: 'markup-style'
 	}),
 	defineSkill({
-		slug: 'sass',
-		color: 'pink',
+		slug: 'java',
+		color: 'orange',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
+			'Coming soon!',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'reactjs',
+		slug: 'mysql',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.MySQL,
+		name: 'MySQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'SQLite',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.SQLite,
+		name: 'SQLite',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'python',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.Python,
+		name: 'Python',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'php',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.PHP,
+		name: 'PHP',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'c',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.C,
+		name: 'C',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'cpp',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.Cpp,
+		name: 'C++',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'cs',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.Csharp,
+		name: 'C#',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'kotlin',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.Kotlin,
+		name: 'Kotlin',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'github',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.Github,
+		name: 'GitHub',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'unity',
+		color: 'black',
+		description:
+			'Coming soon!',
+		logo: Assets.Unity,
+		name: 'Unity',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'nodejs',
+		color: 'green',
+		description:
+			'Coming soon!',
+		logo: Assets.NodeJs,
+		name: 'Node.js',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'bootstrap',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.Bootstrap,
+		name: 'Bootstrap',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'android-studio',
+		color: 'green',
+		description:
+			'Coming soon!',
+		logo: Assets.AndroidStudio,
+		name: 'Android Studio',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'google-cloud',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.GoogleCloud,
+		name: 'Google Cloud',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'figma',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.Figma,
+		name: 'Figma',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'jira',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.Jira,
+		name: 'Jira',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'vscode',
 		color: 'cyan',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.ReactJs,
-		name: 'React Js',
-		category: 'library'
+			'Coming soon!',
+		logo: Assets.VSCode,
+		name: 'VSCode',
+		category: 'tech'
 	}),
 	defineSkill({
-		slug: 'svelte',
+		slug: 'eclipse',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.Eclipse,
+		name: 'Eclipse',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'premiere',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.Premiere,
+		name: 'Adobe Premiere',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'photoshop',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.Photoshop,
+		name: 'Adobe Photoshop',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'sony-vegas',
+		color: 'cyan',
+		description:
+			'Coming soon!',
+		logo: Assets.SonyVegas,
+		name: 'Sony Vegas',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'excel',
+		color: 'green',
+		description:
+			'Coming soon!',
+		logo: Assets.Excel,
+		name: 'Excel',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'word',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.Word,
+		name: 'Word',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'powerpoint',
 		color: 'orange',
-		description: svelteMd,
-		logo: Assets.Svelte,
-		name: 'Svelte',
-		category: 'library'
+		description:
+			'Coming soon!',
+		logo: Assets.PowerPoint,
+		name: 'PowerPoint',
+		category: 'tech'
 	})
+
+	// defineSkill({
+	// 	slug: 'svelte',
+	// 	color: 'orange',
+	// 	description: svelteMd,
+	// 	logo: Assets.Svelte,
+	// 	name: 'Svelte',
+	// 	category: 'library'
+	// }),
 ] as const;
 
 const SkillsData = {
