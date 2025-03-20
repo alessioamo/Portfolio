@@ -1,11 +1,11 @@
-import MY_SKILLS from '$lib/skills.params';
+import SkillsData from '$lib/data/skills';
 
 export function load({ params }: { params: Record<string, string> }) {
 	if (params.slug) {
-		const skill = MY_SKILLS.find((item) => {
+		const item = SkillsData.items.find((item) => {
 			return item.slug === params.slug;
 		});
 
-		return { skill };
+		return { item };
 	}
 }

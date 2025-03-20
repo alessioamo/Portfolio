@@ -1,46 +1,50 @@
 <script lang="ts">
-	import Card from '$lib/components/Card/Card.svelte';
-	import { base } from '$app/paths';
-	import { SKILLS } from '$lib/params';
-	import SearchPage from '$lib/components/SearchPage.svelte';
-	import type { Skill } from '$lib/types';
-	import { isBlank } from '@riadh-adrani/utils';
-	import { getAssetURL } from '$lib/data/assets';
-	import UIcon from '$lib/components/Icon/UIcon.svelte';
+	import EmptyResult from '$lib/components/common/empty-result/empty-result.svelte';
+	import SearchPage from '$lib/components/common/search-page/search-page.svelte';
+	import CardContent from '$lib/components/ui/card/card-content.svelte';
+	import CardTitle from '$lib/components/ui/card/card-title.svelte';
+	import FancyCard from '$lib/components/ui/card/fancy-card.svelte';
+	import Separator from '$lib/components/ui/separator/separator.svelte';
+	import Muted from '$lib/components/ui/typography/muted.svelte';
+	import SkillsData, { groupByCategory } from '$lib/data/skills';
+	import { href } from '$lib/utils';
+	import { mode } from 'mode-watcher';
 
-	const { items, title } = SKILLS;
+	let query = $state('');
 
-	let result: Array<Skill> = items;
+	function onSearch(value: string) {
+		query = value;
+	}
 
-	const onSearch = (e: CustomEvent<{ search: string }>) => {
-		const query = e.detail.search;
-
-		if (isBlank(query)) {
-			result = items;
-		}
-
-		result = items.filter((it) => it.name.toLowerCase().includes(query));
-	};
+	const groups = $derived(groupByCategory(query));
 </script>
 
-<SearchPage {title} on:search={onSearch}>
-	{#if result.length === 0}
-		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
-			<UIcon icon="i-carbon-cube" classes="text-3.5em" />
-			<p class="font-300">Could not find anything...</p>
-		</div>
+<SearchPage title={SkillsData.title} {onSearch}>
+	{#if groups.length === 0}
+		<EmptyResult />
 	{:else}
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5 mt-10">
-			{#each result as skill (skill.slug)}
-				<Card
-					classes={['cursor-pointer decoration-none']}
-					tiltDegree={1}
-					href={`${base}/skills/${skill.slug}`}
-					bgImg={getAssetURL(skill.logo)}
-					color={skill.color}
-				>
-					<p class="text-[var(--tertiary-text)]">{skill.name}</p>
-				</Card>
+		<div class="mt-4 flex flex-col gap-14">
+			{#each groups as group (group.category.slug)}
+				<div class="flex flex-col gap-6">
+					<div class="flex flex-row items-center gap-2">
+						<Separator class="w-[50px]" />
+						<Muted>{group.category.name}</Muted>
+						<Separator class="flex-1" />
+					</div>
+					<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+						{#each group.items as item (item.slug)}
+							<FancyCard
+								bgImg={$mode === 'light' ? item.logo.light : item.logo.dark}
+								color={item.color}
+								href={href(`/skills/${item.slug}`)}
+							>
+								<CardContent>
+									<CardTitle>{item.name}</CardTitle>
+								</CardContent>
+							</FancyCard>
+						{/each}
+					</div>
+				</div>
 			{/each}
 		</div>
 	{/if}
