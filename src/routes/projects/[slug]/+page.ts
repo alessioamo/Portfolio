@@ -1,11 +1,11 @@
-import ProjectsData from '$lib/data/projects';
+import MY_PROJECTS from '$lib/projects.params';
 
 export function load({ params }: { params: Record<string, string> }) {
 	if (params.slug) {
-		const item = ProjectsData.items.find((item) => {
+		const project = MY_PROJECTS.find((item) => {
 			return item.slug === params.slug;
 		});
 
-		return { item };
+		return { project };
 	}
 }

@@ -1,12 +1,31 @@
 <script>
-	import TitledPage from '$lib/components/common/titled-page/titled-page.svelte';
-	import Button from '$lib/components/ui/button/button.svelte';
-	import ResumeData from '$lib/data/resume';
+	import Chip from '$lib/components/Chip/Chip.svelte';
+	import CommonPage from '$lib/components/CommonPage.svelte';
+	import { RESUME } from '$lib/params';
+
+	const { item, title } = RESUME;
 </script>
 
-<TitledPage title={ResumeData.title}>
-	<a href={ResumeData.resume} class="mx-auto">
-		<Button>Download</Button>
-	</a>
-	<iframe src={ResumeData.resume} class="h-full w-full" title={ResumeData.title}></iframe>
-</TitledPage>
+<CommonPage {title}>
+	<div class="resume">
+		{#if item}
+			<a href={item}>
+				<Chip size={'1.25em'}>Download</Chip>
+			</a>
+		{:else}
+			<Chip>CV coming soon!</Chip>
+		{/if}
+	</div>
+</CommonPage>
+
+<style lang="scss">
+	.resume {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+
+		& > a {
+			color: inherit;
+		}
+	}
+</style>

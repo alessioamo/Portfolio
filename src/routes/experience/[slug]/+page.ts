@@ -1,11 +1,11 @@
-import ExperienceData from '$lib/data/experience';
+import MY_EXPERIENCES from '$lib/experiences.params';
 
 export function load({ params }: { params: Record<string, string> }) {
 	if (params.slug) {
-		const item = ExperienceData.items.find((item) => {
+		const experience = MY_EXPERIENCES.find((item) => {
 			return item.slug === params.slug;
 		});
 
-		return { item };
+		return { experience };
 	}
 }

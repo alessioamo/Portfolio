@@ -1,79 +1,46 @@
 <script lang="ts">
-	import Title from '$lib/components/common/title/title.svelte';
-	import Button from '$lib/components/ui/button/button.svelte';
-	import CarouselContent from '$lib/components/ui/carousel/carousel-content.svelte';
-	import CarouselItem from '$lib/components/ui/carousel/carousel-item.svelte';
-	import CarouselNext from '$lib/components/ui/carousel/carousel-next.svelte';
-	import CarouselPrevious from '$lib/components/ui/carousel/carousel-previous.svelte';
-	import Carousel from '$lib/components/ui/carousel/carousel.svelte';
-	import Icon from '$lib/components/ui/icon/icon.svelte';
-	import ResponsiveContainer from '$lib/components/ui/responsive-container/responsive-container.svelte';
-	import { Tooltip, TooltipContent, TooltipTrigger } from '$lib/components/ui/tooltip';
-	import H1 from '$lib/components/ui/typography/h1.svelte';
-	import Muted from '$lib/components/ui/typography/muted.svelte';
-	import HomeData from '$lib/data/home';
-	import { href } from '$lib/utils';
-	import { mode } from 'mode-watcher';
-	import { type CarouselAPI } from '$lib/components/ui/carousel/context.js';
-	import { onMount } from 'svelte';
+	import Carrousel from '$lib/components/Carrousel/Carrousel.svelte';
+	import Icon from '$lib/components/Icon/Icon.svelte';
+	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
+	import { TITLE_SUFFIX } from '$lib/params';
+	import { HOME, getPlatfromIcon } from '$lib/params';
+	import MY_SKILLS from '$lib/skills.params';
+	import { useTitle } from '$lib/utils/helpers';
+	import { isBlank } from '@riadh-adrani/utils';
 
-	let api: CarouselAPI;
+	const { description, lastName, links, name, title, skills } = HOME;
 
-	onMount(() => {
-		setInterval(() => {
-			if (!api) return;
+	const isEmail = (email: string): boolean => {
+		const reg =
+			/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-			api.scrollNext();
-		}, 2000);
-	});
+		return !isBlank(email) && reg.test(email);
+	};
 </script>
 
-<Title title={HomeData.title} />
-<ResponsiveContainer className="flex flex-col justify-center flex-1">
-	<div
-		class="flex flex-1 flex-col items-center justify-center gap-8 px-14 md:flex-row md:justify-between"
-	>
-		<div
-			class="flex flex-col items-center justify-center gap-4 text-center md:items-start md:text-left"
-		>
-			<H1>{HomeData.hero.title}</H1>
-			<Muted>{HomeData.hero.description}</Muted>
-			<div class="flex flex-row gap-1">
-				{#each HomeData.hero.links as item}
-					<a href={item.href} target="_blank">
-						<Tooltip>
-							<TooltipTrigger>
-								<Button variant="outline" size="icon">
-									<Icon icon={item.icon} className="text-lg" />
-								</Button>
-							</TooltipTrigger>
-							<TooltipContent side="bottom">{item.label}</TooltipContent>
-						</Tooltip>
-					</a>
-				{/each}
-			</div>
-		</div>
-		<div>
-			<Carousel bind:api class="w-[200px] md:ml-14" opts={{ loop: true }}>
-				<CarouselContent>
-					{#each HomeData.carousel as item}
-						<CarouselItem class="flex flex-col items-center justify-center gap-4">
-							<img
-								src={$mode === 'dark' ? item.logo.dark : item.logo.light}
-								class="h-[150px] w-[150px]"
-								alt={item.name}
-							/>
-							<a href={href(`/skills/${item.slug}`)}>
-								<Button variant="ghost">
-									{item.name}
-								</Button>
-							</a>
-						</CarouselItem>
-					{/each}
-				</CarouselContent>
-				<CarouselNext />
-				<CarouselPrevious />
-			</Carousel>
+<svelte:head>
+	<title>{useTitle(title, TITLE_SUFFIX)}</title>
+</svelte:head>
+<div
+	class="col self-center flex-1 md:flex-row md:slef-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px"
+>
+	<div class="md:flex-1 gap-10px">
+		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
+		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
+			{description}
+		</p>
+		<div class="row justify-center md:justify-start p-y-15px p-x-0px gap-2">
+			{#each links as link}
+				<a
+					class="decoration-none"
+					href={`${isEmail(link.link) ? 'mailto:' : ''}${link.link}`}
+					target="_blank"
+					rel="noreferrer"
+				>
+					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'20px'} />
+				</a>
+			{/each}
 		</div>
 	</div>
-</ResponsiveContainer>
+	<Carrousel items={skills ?? MY_SKILLS} />
+</div>

@@ -1,28 +1,42 @@
 <script lang="ts">
-	import EmptyResult from '$lib/components/common/empty-result/empty-result.svelte';
-	import SearchPage from '$lib/components/common/search-page/search-page.svelte';
-	import ProjectCard from '$lib/components/projects/project-card.svelte';
-	import Icon from '$lib/components/ui/icon/icon.svelte';
-	import Toggle from '$lib/components/ui/toggle/toggle.svelte';
-	import ProjectsData from '$lib/data/projects';
-	import SkillsData from '$lib/data/skills';
-	import type { Skill } from '$lib/data/types';
+	import Chip from '$lib/components/Chip/Chip.svelte';
+	import ProjectCard from '$lib/components/ProjectCard/ProjectCard.svelte';
+	import SearchPage from '$lib/components/SearchPage.svelte';
+	import { PROJECTS } from '$lib/params';
+	import type { Project, Skill } from '$lib/types';
+	import { onMount } from 'svelte';
+	import MY_SKILLS from '$lib/skills.params';
+	import UIcon from '$lib/components/Icon/UIcon.svelte';
 
 	interface SkillFilter extends Skill {
 		isSelected?: boolean;
 	}
 
-	let filters: Array<SkillFilter> = $state(
-		SkillsData.items.filter((it) => {
-			return ProjectsData.items.some((project) =>
-				project.skills.some((skill) => skill.slug === it.slug)
-			);
-		})
-	);
+	const { items, title } = PROJECTS;
 
-	let search = $state('');
-	let result = $derived(
-		ProjectsData.items.filter((project) => {
+	let filters: Array<SkillFilter> = MY_SKILLS.filter((it) => {
+		return items.some((project) => project.skills.some((skill) => skill.slug === it.slug));
+	});
+
+	let search = '';
+	let displayed: Array<Project> = [];
+
+	const isSelected = (slug: string): boolean => {
+		return filters.some((item) => item.slug === slug && item.isSelected);
+	};
+
+	const onSelected = (slug: string) => {
+		filters = filters.map((tech) => {
+			if (tech.slug === slug) {
+				tech.isSelected = !isSelected(slug);
+			}
+
+			return tech;
+		});
+	};
+
+	$: {
+		displayed = items.filter((project) => {
 			const isFiltered =
 				filters.every((item) => !item.isSelected) ||
 				project.skills.some((tech) =>
@@ -34,41 +48,61 @@
 				project.name.trim().toLowerCase().includes(search.trim().toLowerCase());
 
 			return isFiltered && isSearched;
-		})
-	);
+		});
+	}
 
-	const toggleSelected = (slug: string) => {
-		filters = filters.map((it) => (it.slug === slug ? { ...it, isSelected: !it.isSelected } : it));
+	const onSearch = (e: CustomEvent<{ search: string }>) => {
+		search = e.detail.search;
 	};
 
-	const onSearch = (query: string) => (search = query);
+	onMount(() => {
+		const query = location.search;
+
+		if (query) {
+			const queryParams = new URLSearchParams(location.search);
+
+			const item = queryParams.get('item');
+
+			if (item) {
+				search = item;
+			}
+		}
+	});
 </script>
 
-<SearchPage title={ProjectsData.title} {onSearch}>
-	<div class="flex flex-1 flex-col gap-8">
-		<div class="flex flex-row flex-wrap gap-2">
-			{#each filters as it (it.slug)}
-				<Toggle
-					pressed={it.isSelected}
-					variant="outline"
-					class="flex flex-row items-center gap-2 rounded-lg"
-					on:click={() => toggleSelected(it.slug)}
-				>
-					{#if it.isSelected}
-						<Icon icon="i-carbon-close" />
-					{/if}
-					{it.name}</Toggle
-				>
+<SearchPage {title} on:search={onSearch}>
+	<div class="projects-filters">
+		{#each filters as tech}
+			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}
+				>{tech.name}</Chip
+			>
+		{/each}
+	</div>
+	{#if displayed.length === 0}
+		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
+			<UIcon icon="i-carbon-cube" classes="text-3.5em" />
+			<p class="font-300">Could not find anything...</p>
+		</div>
+	{:else}
+		<div class="projects-list mt-5">
+			{#each displayed as project}
+				<ProjectCard {project} />
 			{/each}
 		</div>
-		{#if result.length === 0}
-			<EmptyResult />
-		{:else}
-			<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-				{#each result as it (it.slug)}
-					<ProjectCard project={it} />
-				{/each}
-			</div>
-		{/if}
-	</div>
+	{/if}
 </SearchPage>
+
+<style lang="scss">
+	.projects-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+
+		@media (max-width: 1350px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 850px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+</style>
