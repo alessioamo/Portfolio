@@ -111,6 +111,47 @@ export function computeExactDuration(from: Date, to: Date = new Date()): string 
 		.join(' ');
 }
 
+export function computeExactDurationWithoutDays(from: Date, to: Date = new Date()): string {
+	const fromMs = from.getTime();
+	const toMs = to.getTime();
+
+	const display: Array<string> = [];
+
+	let remaining = toMs - fromMs;
+
+	// Calculate years
+	const years = remaining / YEAR;
+	if (years >= 1) {
+		remaining = remaining % YEAR;
+		display.push(`${Math.trunc(years)} year${years >= 2 ? 's' : ''}`);
+	}
+
+	// Calculate months
+	const months = remaining / MONTH;
+	if (months >= 1) {
+		remaining = remaining % MONTH;
+		display.push(`${Math.trunc(months)} month${months >= 2 ? 's' : ''}`);
+	}
+
+	// If no years or months are found, return "0 months"
+	if (display.length === 0) {
+		return "0 months";
+	}
+
+	// Format the result with commas and "and" for the last item
+	return display
+		.map((it, index) => {
+		if (display.length === 1 || index === display.length - 1) return it;
+
+		if (index === display.length - 2) {
+			return `${it} and`;
+		}
+
+		return `${it},`;
+	})
+	.join(' ');
+}
+
 const monthNames = [
 	'January',
 	'February',
