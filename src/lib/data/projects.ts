@@ -62,7 +62,7 @@ const items: Array<Project> = [
 			'A website to create icons and descriptions for the popular video game Dead By Daylight.',
 		links: [
 			{ to: 'https://dbdperkmaker.ca/', label: 'dbdperkmaker.ca' },
-			{ to: 'https://github.com/alessioamo/dbdperkmaker', label: 'GitHub Repo' }
+			{ to: 'https://github.com/alessioamo/dbdperkmaker', label: 'GitHub' }
 		],
 		logo: Assets.DBDPerkMaker,
 		name: 'DBD Perk Maker',
@@ -104,7 +104,7 @@ const items: Array<Project> = [
 			{ to: 'https://github.com/alessioamo/Conuhacks-2025', label: 'GitHub' }
 		],
 		logo: Assets.TheOutlaw,
-		name: 'Hackathon Submission',
+		name: 'ConUHacks Hackathon',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('csharp', 'unity', 'github', 'aseprite', 'vscode'),
 		type: 'Video Game',
@@ -178,7 +178,7 @@ const items: Array<Project> = [
 			'A puzzle platformer about navigating a colorful world and finding out the truth behind the shades.',
 		links: [
 			{ to: '', label: 'Itch.io Page' }, //TODO
-			{ to: '', label: 'GitHub Repo' } // TODO
+			{ to: '', label: 'GitHub' } // TODO
 		],
 		logo: Assets.Unity,
 		name: '2D Puzzle Platformer',
@@ -216,7 +216,7 @@ const items: Array<Project> = [
 		shortDescription:
 			'An web game inspired by the hit video game Disney Dreamlight Valley.',
 		links: [{ to: '', label: 'Webpage' }, //TODO
-				{ to: '', label: 'GitHub Repo' }], //TODO
+				{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.Scramblecoin,
 		name: 'Scramblecoin Web Game',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -249,7 +249,7 @@ const items: Array<Project> = [
 		shortDescription:
 			'An strategy web game based on making tough choices and taking risks to survive the apocalypse.',
 		links: [{ to: '', label: 'Webpage' },
-				{ to: '', label: 'GitHub Repo' }], //TODO
+				{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.ZombieApocalypse,
 		name: 'Strategy Web Game',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -282,7 +282,7 @@ const items: Array<Project> = [
 		shortDescription:
 			'An idle web game based on the popular video game, Stardew Valley.',
 		links: [{ to: '', label: 'Webpage' },
-				{ to: '', label: 'GitHub Repo' }], //TODO
+				{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.Stardew,
 		name: 'Idle Web Game',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -311,7 +311,7 @@ const items: Array<Project> = [
 			'<br>• These include adding, deleting, or editing products, viewing a list of all products and their quantities, viewing orders of all users, shipping the orders with their tracking number, or changing permissions of other users',
 		shortDescription:
 			'Fully functioning website built with JSP and servlets, and linked to a database.',
-		links: [{ to: 'https://github.com/alessioamo/SOEN387-A1', label: 'GitHub Repo' }],
+		links: [{ to: 'https://github.com/alessioamo/SOEN387-A1', label: 'GitHub' }],
 		logo: Assets.Commerce,
 		name: 'Commerce Website',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -343,7 +343,7 @@ const items: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'Webpage built with JavaScript, CSS, and HTML to create your own Family Feud game.',
-		links: [{ to: 'https://github.com/alessioamo/Family-Feud', label: 'GitHub Repo' }],
+		links: [{ to: 'https://github.com/alessioamo/Family-Feud', label: 'GitHub' }],
 		logo: Assets.FamilyFeud,
 		name: 'Family Feud Game',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -382,7 +382,7 @@ const items: Array<Project> = [
 			'<br>• All parameters are customizable to enable/disable various features of the game (such as sound effects, intro video, daily double, and more)',
 		shortDescription:
 			'Webpage built with JavaScript, CSS, and HTML to create your own Jeopardy game.',
-		links: [{ to: 'https://github.com/alessioamo/Jeopardy', label: 'GitHub Repo' }],
+		links: [{ to: 'https://github.com/alessioamo/Jeopardy', label: 'GitHub' }],
 		logo: Assets.Jeopardy,
 		name: 'Jeopardy Game',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -410,7 +410,7 @@ const items: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'Calculator with scientific functions built from scratch in Python without the use of libraries.',
-		links: [{ to: 'https://github.com/alessioamo/ETERNITY-Calculator', label: 'GitHub Repo' }],
+		links: [{ to: 'https://github.com/alessioamo/ETERNITY-Calculator', label: 'GitHub' }],
 		logo: Assets.Calculator,
 		name: 'Python Scientific Calculator',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -438,7 +438,7 @@ const items: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'A mobile application for students in university to efficiently organize themselves, and stay on top of their studies.', //TODO
-		links: [{ to: 'https://github.com/alessioamo/Concordia-For-Students', label: 'GitHub Repo' }],
+		links: [{ to: 'https://github.com/alessioamo/Concordia-For-Students', label: 'GitHub' }],
 		logo: Assets.Concordia,
 		name: 'Recreated School Application',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -478,7 +478,7 @@ const items: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'2D Side-scrolling platforming game using Unity.',
-		links: [{ to: '', label: 'GitHub Repo' }], //TODO
+		links: [{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.Unity,
 		name: 'Side Scrolling Platformer Game',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -502,7 +502,7 @@ const items: Array<Project> = [
 			'Please note that this project is currently under development and has placeholder images and layouts.', //TODO
 		shortDescription:
 			'Online Chess minigame where you control a King on a chessboard and must outlast other pieces.',
-		links: [{ to: '', label: 'GitHub Repo' }], //TODO
+		links: [{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.Chess,
 		name: 'Chess Minigame',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -522,7 +522,7 @@ const items: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'Fully functioning grocery store website built with HTML, JavaScript, PHP, and linked to a database.',
-		links: [{ to: '', label: 'GitHub Repo' }], //TODO
+		links: [{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.Grocery,
 		name: 'Grocery Store Website',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -558,7 +558,7 @@ const items: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'C++ program that simulates the game Risk against other players and/or a computer that can use different strategies.',
-		links: [{ to: '', label: 'GitHub Repo' }], //TODO
+		links: [{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.Risk,
 		name: 'Risk Game',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -578,7 +578,7 @@ const items: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'Java program that simulates the game Battleship against a computer.',
-		links: [{ to: '', label: 'GitHub Repo' }], //TODO
+		links: [{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.Battleship,
 		name: 'Battleship Game',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -598,7 +598,7 @@ const items: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'Discord Bot that responds and reacts to user entered commands.',
-		links: [{ to: '', label: 'GitHub Repo' }], //TODO
+		links: [{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.Discord,
 		name: 'Discord Bot',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -627,7 +627,7 @@ const items: Array<Project> = [
 		shortDescription:
 			'Reddit Bot that scans through subreddits and automatically replies to posts and comments based on their content.',
 		links: [{ to: 'https://www.reddit.com/user/Jack-Sparrow_Bot/', label: 'Bot Reddit Account' },
-				{ to: '', label: 'GitHub Repo' }], //TODO
+				{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.Reddit,
 		name: 'Reddit Bot',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
@@ -655,7 +655,7 @@ const items: Array<Project> = [
 			'Coming soon!', //TODO
 		shortDescription:
 			'A mod for the popular farming game Stardew Valley that adds a new animal, the penguin, with many variations to it and new custom items.',
-		links: [{ to: '', label: 'GitHub Repo' }], //TODO
+		links: [{ to: '', label: 'GitHub' }], //TODO
 		logo: Assets.Stardew,
 		name: 'Stardew Valley Animal Mod',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },

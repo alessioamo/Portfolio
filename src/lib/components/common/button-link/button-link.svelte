@@ -11,6 +11,7 @@
 	<Tooltip openDelay={300}>
 		<TooltipTrigger>
 			<Button size="icon" variant="outline">
+				<!-- TODO - here is where link icon is placed -->
 				<Icon icon="i-carbon-link" />
 			</Button>
 		</TooltipTrigger>

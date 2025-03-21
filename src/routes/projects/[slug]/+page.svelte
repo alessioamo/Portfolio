@@ -42,7 +42,7 @@
 				<div class="flex flex-row flex-wrap justify-center gap-2">
 					<!-- TODO - add unique icons for each link -->
 					{#each data.item.links as link (link.to)}
-						<a href={link.to} target="_blank"><Badge variant="destructive">{link.label}</Badge></a>
+						<a href={link.to} target="_blank"><Badge variant="outline">{link.label}</Badge></a>
 					{/each}
 				</div>
 				<div class="flex flex-row flex-wrap justify-center gap-2">
