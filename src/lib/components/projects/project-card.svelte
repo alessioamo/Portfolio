@@ -77,8 +77,7 @@
 				</DropdownMenu>
 			{:else}
 				{#each project.links as link (link.to)}
-					<a href={link.to} target={'_blank'}>
-					</a>
+					<ButtonLink {link} />
 				{/each}
 			{/if}
 		</div>
