@@ -58,7 +58,7 @@
 			</CardTitle>
 			<!-- TODO - link icon here also -->
 			{#if project.links.length > 2}
-				<ButtonLink link={project.links[0]} target="_blank" />
+				<ButtonLink link={project.links[0]} />
 				<DropdownMenu>
 					<DropdownMenuTrigger>
 						<Button size="icon" variant="outline"
@@ -77,7 +77,8 @@
 				</DropdownMenu>
 			{:else}
 				{#each project.links as link (link.to)}
-					<ButtonLink {link} target="_blank" />
+					<a href={link.to} target={'_blank'}>
+					</a>
 				{/each}
 			{/if}
 		</div>
