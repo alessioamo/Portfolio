@@ -87,17 +87,23 @@
 			<Icon icon="i-carbon-assembly-cluster" />
 			<Muted>{project.type}</Muted>
 		</Muted>
+
+		<!--
 		<Muted className="flex flex-row gap-2 items-center">
 			<Icon icon="i-carbon-time" />
 			<Muted>{exactDuration}</Muted>
 		</Muted>
+		-->
+
 		<Muted className="py-4 md:py-2 md:min-h-[100px] md:max-h-[100px]"
 			>{ellipsify(project.shortDescription, 100)}</Muted
 		>
-		<div class="flex w-full flex-row items-center justify-between">
+
+		<!-- <div class="flex w-full flex-row items-center justify-between">
 			<Badge variant="outline">{from}</Badge>
 			<Badge variant="outline">{to}</Badge>
-		</div>
+		</div> -->
+		
 		<Separator />
 		<div class="flex flex-row flex-wrap items-center gap-2">
 			{#each project.skills as skill (skill.slug)}

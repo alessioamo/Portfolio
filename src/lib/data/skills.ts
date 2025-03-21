@@ -10,6 +10,7 @@ const categories = [
 	defineSkillCategory({ name: 'Programming Languages', slug: 'pro-lang' }),
 	defineSkillCategory({ name: 'Frameworks', slug: 'framework' }),
 	defineSkillCategory({ name: 'Libraries', slug: 'library' }),
+	defineSkillCategory({ name: 'Libraries & Frameworks', slug: 'library-framework' }),
 	defineSkillCategory({ name: 'Langauges', slug: 'lang' }),
 	defineSkillCategory({ name: 'Databases', slug: 'db' }),
 	defineSkillCategory({ name: 'ORMs', slug: 'orm' }),
@@ -81,6 +82,7 @@ export const groupByCategory = (
 const title = 'Skills';
 
 const items = [
+	// Programming Languages
 	defineSkill({
 		slug: 'js',
 		color: 'yellow',
@@ -100,33 +102,6 @@ const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'reactjs',
-		color: 'cyan',
-		description:
-			'Coming soon!',
-		logo: Assets.ReactJs,
-		name: 'React Js',
-		category: 'library'
-	}),
-	defineSkill({
-		slug: 'css',
-		color: 'blue',
-		description:
-			'Coming soon!',
-		logo: Assets.CSS,
-		name: 'CSS',
-		category: 'markup-style'
-	}),
-	defineSkill({
-		slug: 'html',
-		color: 'orange',
-		description:
-			'Coming soon!',
-		logo: Assets.HTML,
-		name: 'HTML',
-		category: 'markup-style'
-	}),
-	defineSkill({
 		slug: 'java',
 		color: 'orange',
 		description:
@@ -134,24 +109,6 @@ const items = [
 		logo: Assets.Java,
 		name: 'Java',
 		category: 'pro-lang'
-	}),
-	defineSkill({
-		slug: 'mysql',
-		color: 'blue',
-		description:
-			'Coming soon!',
-		logo: Assets.MySQL,
-		name: 'MySQL',
-		category: 'db'
-	}),
-	defineSkill({
-		slug: 'SQLite',
-		color: 'blue',
-		description:
-			'Coming soon!',
-		logo: Assets.SQLite,
-		name: 'SQLite',
-		category: 'db'
 	}),
 	defineSkill({
 		slug: 'python',
@@ -169,6 +126,15 @@ const items = [
 			'Coming soon!',
 		logo: Assets.PHP,
 		name: 'PHP',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'cs',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.Csharp,
+		name: 'C#',
 		category: 'pro-lang'
 	}),
 	defineSkill({
@@ -190,12 +156,12 @@ const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'cs',
-		color: 'purple',
+		slug: 'nodejs',
+		color: 'green',
 		description:
 			'Coming soon!',
-		logo: Assets.Csharp,
-		name: 'C#',
+		logo: Assets.NodeJs,
+		name: 'Node.js',
 		category: 'pro-lang'
 	}),
 	defineSkill({
@@ -207,6 +173,68 @@ const items = [
 		name: 'Kotlin',
 		category: 'pro-lang'
 	}),
+
+	// Libraries & Frameworks
+	defineSkill({
+		slug: 'reactjs',
+		color: 'cyan',
+		description:
+			'Coming soon!',
+		logo: Assets.ReactJs,
+		name: 'React Js',
+		category: 'library-framework'
+	}),
+	defineSkill({
+		slug: 'bootstrap',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.Bootstrap,
+		name: 'Bootstrap',
+		category: 'library-framework'
+	}),
+
+	// Markup & Style
+	defineSkill({
+		slug: 'html',
+		color: 'orange',
+		description:
+			'Coming soon!',
+		logo: Assets.HTML,
+		name: 'HTML',
+		category: 'markup-style'
+	}),
+	defineSkill({
+		slug: 'css',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.CSS,
+		name: 'CSS',
+		category: 'markup-style'
+	}),
+
+	// Databases
+	defineSkill({
+		slug: 'mysql',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.MySQL,
+		name: 'MySQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'SQLite',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.SQLite,
+		name: 'SQLite',
+		category: 'db'
+	}),
+
+	// Tools & Technologies
 	defineSkill({
 		slug: 'github',
 		color: 'purple',
@@ -226,59 +254,15 @@ const items = [
 		category: 'tech'
 	}),
 	defineSkill({
-		slug: 'nodejs',
-		color: 'green',
-		description:
-			'Coming soon!',
-		logo: Assets.NodeJs,
-		name: 'Node.js',
-		category: 'pro-lang'
-	}),
-	defineSkill({
-		slug: 'bootstrap',
-		color: 'purple',
-		description:
-			'Coming soon!',
-		logo: Assets.Bootstrap,
-		name: 'Bootstrap',
-		category: 'library'
-	}),
-	defineSkill({
-		slug: 'android-studio',
-		color: 'green',
-		description:
-			'Coming soon!',
-		logo: Assets.AndroidStudio,
-		name: 'Android Studio',
-		category: 'tech'
-	}),
-	defineSkill({
 		slug: 'google-cloud',
 		color: 'blue',
 		description:
 			'Coming soon!',
 		logo: Assets.GoogleCloud,
 		name: 'Google Cloud',
-		category: 'pro-lang'
-	}),
-	defineSkill({
-		slug: 'figma',
-		color: 'purple',
-		description:
-			'Coming soon!',
-		logo: Assets.Figma,
-		name: 'Figma',
 		category: 'tech'
 	}),
-	defineSkill({
-		slug: 'jira',
-		color: 'blue',
-		description:
-			'Coming soon!',
-		logo: Assets.Jira,
-		name: 'Jira',
-		category: 'tech'
-	}),
+	
 	defineSkill({
 		slug: 'vscode',
 		color: 'cyan',
@@ -298,14 +282,34 @@ const items = [
 		category: 'tech'
 	}),
 	defineSkill({
-		slug: 'premiere',
+		slug: 'android-studio',
+		color: 'green',
+		description:
+			'Coming soon!',
+		logo: Assets.AndroidStudio,
+		name: 'Android Studio',
+		category: 'tech'
+	}),
+
+	defineSkill({
+		slug: 'figma',
 		color: 'purple',
 		description:
 			'Coming soon!',
-		logo: Assets.Premiere,
-		name: 'Adobe Premiere',
+		logo: Assets.Figma,
+		name: 'Figma',
 		category: 'tech'
 	}),
+	defineSkill({
+		slug: 'jira',
+		color: 'blue',
+		description:
+			'Coming soon!',
+		logo: Assets.Jira,
+		name: 'Jira',
+		category: 'tech'
+	}),
+
 	defineSkill({
 		slug: 'photoshop',
 		color: 'blue',
@@ -316,12 +320,39 @@ const items = [
 		category: 'tech'
 	}),
 	defineSkill({
+		slug: 'premiere',
+		color: 'purple',
+		description:
+			'Coming soon!',
+		logo: Assets.Premiere,
+		name: 'Adobe Premiere',
+		category: 'tech'
+	}),
+	defineSkill({
 		slug: 'sony-vegas',
 		color: 'cyan',
 		description:
 			'Coming soon!',
 		logo: Assets.SonyVegas,
 		name: 'Sony Vegas',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'aseprite',
+		color: 'grey',
+		description:
+			'Coming soon!',
+		logo: Assets.Aseprite,
+		name: 'Aseprite',
+		category: 'tech'
+	}),
+	defineSkill({
+		slug: 'powerpoint',
+		color: 'orange',
+		description:
+			'Coming soon!',
+		logo: Assets.PowerPoint,
+		name: 'PowerPoint',
 		category: 'tech'
 	}),
 	defineSkill({
@@ -342,15 +373,6 @@ const items = [
 		name: 'Word',
 		category: 'tech'
 	}),
-	defineSkill({
-		slug: 'powerpoint',
-		color: 'orange',
-		description:
-			'Coming soon!',
-		logo: Assets.PowerPoint,
-		name: 'PowerPoint',
-		category: 'tech'
-	})
 
 	// defineSkill({
 	// 	slug: 'svelte',

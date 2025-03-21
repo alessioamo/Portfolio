@@ -5,28 +5,28 @@ const title = 'Education';
 
 const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
-		description: '',
-		location: 'Tunisia',
-		logo: Assets.Unknown,
+		degree: 'Bachelor\'s Degree of Computer Science',
+		description: '', // TODO
+		location: 'Montreal, Quebec',
+		logo: Assets.Concordia,
 		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		organization: 'Concordia University',
+		period: { from: new Date(2020, 8, 1), to: new Date(2024, 4, 1) },
 		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		slug: 'education-concordia',
+		subjects: ['Programming', 'Web Development', 'Data Structures and Algorithms', 'Game Development', 'Java', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'MySQL', 'PHP', 'Python', 'C#', 'C', 'C++']
 	},
 	{
-		degree: 'PhD of Computer Science',
-		description: '',
-		location: 'USA',
-		logo: Assets.Unknown,
+		degree: 'DEC in Honours Pure and Applied Science',
+		description: '', // TODO
+		location: 'Montreal, Quebec',
+		logo: Assets.Vanier,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		organization: 'Vanier College',
+		period: { from: new Date(2018, 8, 1), to: new Date(2020, 4, 1) },
 		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		slug: 'education-vanier',
+		subjects: ['Calculus I + II', 'Linear Algebra', 'Mechanics', 'Waves', 'Physics', 'Astrophysics', 'Electricity and Magnetism', 'Chemistry', 'Biology']
 	}
 ];
 
