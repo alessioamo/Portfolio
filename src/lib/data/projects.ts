@@ -18,7 +18,7 @@ const items: Array<Project> = [
 		links: [
 			{ to: 'https://bananahammer33.itch.io/duct-tape-and-despair', label: 'Itch.io' }
 		],
-		logo: Assets.DuctTape,
+		logo: Assets.Android,
 		name: '7-Day Game Jam',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('csharp', 'unity', 'github', 'vscode', 'aseprite'),
@@ -103,7 +103,7 @@ const items: Array<Project> = [
 			{ to: 'https://devpost.com/software/the-outlaw', label: 'Submission' },
 			{ to: 'https://github.com/alessioamo/Conuhacks-2025', label: 'GitHub' }
 		],
-		logo: Assets.TheOutlaw,
+		logo: Assets.Android,
 		name: 'Hackathon Submission',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('csharp', 'unity', 'github', 'aseprite', 'vscode'),
