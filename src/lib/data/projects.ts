@@ -7,7 +7,7 @@ const items: Array<Project> = [
 		slug: 'game-brackeys-game-jam',
 		color: '#0a1dc7',
 		description:
-			'My entry to the Brackey\'s Game Jam 2025.1. In this game jam, we had 7 days to create a full video game based on the theme <i>Nothing Can Go Wrong</i>.' + 
+			'My entry to the Brackey\'s Game Jam 2025.1. In this game jam, we had 7 days to create a full video game based on the theme <i>Nothing Can Go Wrong</i>. ' + 
 			'I completed this project with two team members. I was the sole developer and created the entire game from scratch. My team members worked on music design and art.' +
 			'I also created some of the smaller pieces of art, as well as some minigame backgrounds found throughout the game. Overall, I placed 174/2194 for my first ever game jam.' + 
 			'<br>' +
@@ -18,7 +18,7 @@ const items: Array<Project> = [
 		links: [
 			{ to: 'https://bananahammer33.itch.io/duct-tape-and-despair', label: 'Itch.io' }
 		],
-		logo: Assets.Android,
+		logo: Assets.DuctTape,
 		name: '7-Day Game Jam',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('csharp', 'unity', 'github', 'vscode', 'aseprite'),
@@ -103,7 +103,7 @@ const items: Array<Project> = [
 			{ to: 'https://devpost.com/software/the-outlaw', label: 'Submission' },
 			{ to: 'https://github.com/alessioamo/Conuhacks-2025', label: 'GitHub' }
 		],
-		logo: Assets.Android,
+		logo: Assets.TheOutlaw,
 		name: 'Hackathon Submission',
 		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('csharp', 'unity', 'github', 'aseprite', 'vscode'),

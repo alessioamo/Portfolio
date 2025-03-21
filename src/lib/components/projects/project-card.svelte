@@ -84,6 +84,7 @@
 	</CardHeader>
 	<CardContent class="flex flex-1 flex-col gap-4">
 		<Muted className="flex flex-row gap-2 items-center">
+			<!-- TODO - change logo depending on type -->
 			<Icon icon="i-carbon-assembly-cluster" />
 			<Muted>{project.type}</Muted>
 		</Muted>
