@@ -83,6 +83,7 @@ const Assets = {
 	VSCode: asset('vscode.png'),
 	Eclipse: asset('eclipse.png'),
 	SonyVegas: asset('sonyvegas.png'),
+	Aseprite: asset('aseprite.png'),
 	PowerPoint: asset('powerpoint.png'),
 	Excel: asset('excel.png'),
 	Word: asset('word.png'),
