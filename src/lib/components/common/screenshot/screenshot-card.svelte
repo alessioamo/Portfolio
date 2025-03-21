@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { Card, CardFooter } from '$lib/components/ui/card';
+
 	import {
 		Dialog,
 		DialogClose,
@@ -32,12 +33,11 @@
 		<div
 			class="flex-1 bg-cover bg-center bg-no-repeat"
 			style={`background-image: url("${item.src}"); background-size: contain; background-position: center center;`}
-		>
-		</div>
+		></div>
+		<DialogFooter>
+			<DialogClose>
+				<Button>Close</Button>
+			</DialogClose>
+		</DialogFooter>
 	</DialogContent>
-	<DialogFooter>
-		<DialogClose>
-			<Button>Close</Button>
-		</DialogClose>
-	</DialogFooter>
 </Dialog>
