@@ -56,8 +56,9 @@
 					<TooltipContent>{project.name}</TooltipContent>
 				</Tooltip>
 			</CardTitle>
+			<!-- TODO - link icon here also -->
 			{#if project.links.length > 2}
-				<ButtonLink link={project.links[0]} />
+				<ButtonLink link={project.links[0]} target="_blank" />
 				<DropdownMenu>
 					<DropdownMenuTrigger>
 						<Button size="icon" variant="outline"
@@ -76,7 +77,7 @@
 				</DropdownMenu>
 			{:else}
 				{#each project.links as link (link.to)}
-					<ButtonLink {link} />
+					<ButtonLink {link} target="_blank" />
 				{/each}
 			{/if}
 		</div>
