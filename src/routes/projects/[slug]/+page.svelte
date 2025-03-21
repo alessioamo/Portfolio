@@ -11,7 +11,7 @@
 	import Muted from '$lib/components/ui/typography/muted.svelte';
 	import Assets from '$lib/data/assets';
 	import type { Project } from '$lib/data/types';
-	import { computeExactDuration, getMonthAndYear, href } from '$lib/utils';
+	import { computeExactDuration, getMonthAndYear, href, computeExactDurationWithoutDays } from '$lib/utils';
 	import { mode } from 'mode-watcher';
 
 	let { data }: { data: { item?: Project } } = $props();
@@ -22,7 +22,7 @@
 	);
 
 	let duration = $derived(
-		`${getMonthAndYear(data.item?.period.from)} - ${getMonthAndYear(data.item?.period.to)} · ${computeExactDuration(
+		`${getMonthAndYear(data.item?.period.from)} - ${getMonthAndYear(data.item?.period.to)} · ${computeExactDurationWithoutDays(
 			data.item?.period.from ?? new Date(),
 			data.item?.period.to
 		)}`
@@ -37,7 +37,7 @@
 			<div class="flex w-full flex-col items-center justify-center gap-4">
 				<H1>{data.item.name}</H1>
 				<Muted>{data.item.type}</Muted>
-				<Muted>{duration}</Muted>
+				<!-- <Muted>{duration}</Muted> -->
 				<Separator />
 				<div class="flex flex-row flex-wrap justify-center gap-2">
 					{#each data.item.links as link (link.to)}

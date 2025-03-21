@@ -129,7 +129,7 @@ const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'cs',
+		slug: 'csharp',
 		color: 'purple',
 		description:
 			'Coming soon!',

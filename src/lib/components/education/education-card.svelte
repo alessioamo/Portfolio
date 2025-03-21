@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Assets from '$lib/data/assets';
 	import type { Education } from '$lib/data/types';
-	import { computeExactDuration, getMonthAndYear, href } from '$lib/utils';
+	import { computeExactDuration, getMonthAndYear, href, computeExactDurationWithoutDays } from '$lib/utils';
 	import { ellipsify } from '@riadh-adrani/utils';
 	import { mode } from 'mode-watcher';
 	import { Avatar, AvatarFallback } from '../ui/avatar';
@@ -15,7 +15,7 @@
 
 	const { it }: { it: Education } = $props();
 
-	const exactDuration = computeExactDuration(it.period.from, it.period.to);
+	const exactDuration = computeExactDurationWithoutDays(it.period.from, it.period.to);
 
 	let from = $derived(getMonthAndYear(it.period.from));
 	let to = $derived(getMonthAndYear(it.period.to));
