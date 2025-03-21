@@ -7,7 +7,8 @@
 	const { link }: { link: Link } = $props();
 </script>
 
-<a href={link.to} target={link.newTab ? '_blank' : undefined}>
+<!-- <a href={link.to} target={link.newTab ? '_blank' : undefined}> -->
+<a href={link.to} target={"_blank"}>
 	<Tooltip openDelay={300}>
 		<TooltipTrigger>
 			<Button size="icon" variant="outline">
