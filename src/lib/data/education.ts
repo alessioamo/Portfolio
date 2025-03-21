@@ -11,7 +11,7 @@ const items: Array<Education> = [
 		logo: Assets.Concordia,
 		name: '',
 		organization: 'Concordia University',
-		period: { from: new Date(2020, 8, 1), to: new Date(2024, 4, 1) },
+		period: { from: new Date(2020, 8), to: new Date(2024, 4) },
 		shortDescription: '',
 		slug: 'education-concordia',
 		subjects: ['Programming', 'Web Development', 'Data Structures and Algorithms', 'Game Development', 'Java', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'MySQL', 'PHP', 'Python', 'C#', 'C', 'C++']
@@ -23,7 +23,7 @@ const items: Array<Education> = [
 		logo: Assets.Vanier,
 		name: '',
 		organization: 'Vanier College',
-		period: { from: new Date(2018, 8, 1), to: new Date(2020, 4, 1) },
+		period: { from: new Date(2018, 8), to: new Date(2020, 4) },
 		shortDescription: '',
 		slug: 'education-vanier',
 		subjects: ['Calculus I + II', 'Linear Algebra', 'Mechanics', 'Waves', 'Physics', 'Astrophysics', 'Electricity and Magnetism', 'Chemistry', 'Biology']

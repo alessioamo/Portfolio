@@ -28,9 +28,9 @@
 
 	const { project }: { project: Project } = $props();
 
-	let from = $derived(getMonthAndYear(project.period.from));
-	let to = $derived(getMonthAndYear(project.period.to));
-	let exactDuration = $derived(computeExactDuration(project.period.from, project.period.to));
+	// let from = $derived(getMonthAndYear(project.period.from));
+	// let to = $derived(getMonthAndYear(project.period.to));
+	// let exactDuration = $derived(computeExactDuration(project.period.from, project.period.to));
 </script>
 
 <FancyCard
@@ -103,7 +103,7 @@
 			<Badge variant="outline">{from}</Badge>
 			<Badge variant="outline">{to}</Badge>
 		</div> -->
-		
+
 		<Separator />
 		<div class="flex flex-row flex-wrap items-center gap-2">
 			{#each project.skills as skill (skill.slug)}

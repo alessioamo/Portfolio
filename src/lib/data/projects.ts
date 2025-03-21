@@ -15,12 +15,12 @@ const items: Array<Project> = [
 			'you have to balance repairing tasks, hacking the AI, and opening up new parts of the ship in hopes to make contact with the outside world...',
 		shortDescription:
 			'A video game created in 7 days for the Brackey\'s Game Jam 2025.1. Placed 174/2194.',
-		links: [{ to: 'https://bananahammer33.itch.io/duct-tape-and-despair', label: 'Itch.io' }],
+		links: [
+			{ to: 'https://bananahammer33.itch.io/duct-tape-and-despair', label: 'Itch.io' }
+		],
 		logo: Assets.DuctTape,
 		name: '7-Day Game Jam',
-		period: {
-			from: new Date()
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('csharp', 'unity', 'github', 'vscode', 'aseprite'),
 		type: 'Video Game',
 		screenshots: [
@@ -47,7 +47,7 @@ const items: Array<Project> = [
 			{
 				label: 'Minimap',
 				src: 'https://raw.githubusercontent.com/alessioamo/Portfolio/main/static/screenshots/duct-tape-minimap.png'
-			},
+			}
 		]
 	},
 	{
@@ -66,9 +66,7 @@ const items: Array<Project> = [
 		],
 		logo: Assets.DBDPerkMaker,
 		name: 'DBD Perk Maker',
-		period: {
-			from: new Date()
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'html', 'css', 'java', 'googlecloud', 'github', 'vscode'),
 		type: 'Website',
 		screenshots: [
@@ -107,9 +105,7 @@ const items: Array<Project> = [
 		],
 		logo: Assets.TheOutlaw,
 		name: 'Hackathon Submission',
-		period: {
-			from: new Date()
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('csharp', 'unity', 'github', 'aseprite', 'vscode'),
 		type: 'Video Game',
 		screenshots: [
@@ -153,9 +149,7 @@ const items: Array<Project> = [
 		],
 		logo: Assets.Blog,
 		name: 'Personal Blog',
-		period: {
-			from: new Date()
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'html', 'css', 'googlecloud', 'bootstrap', 'java', 'github', 'vscode'),
 		type: 'Website',
 		screenshots: [
@@ -188,9 +182,7 @@ const items: Array<Project> = [
 		],
 		logo: Assets.Unity,
 		name: '2D Puzzle Platformer',
-		period: {
-			from: new Date()
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('csharp', 'unity', 'github', 'vscode', 'aseprite'),
 		type: 'Video Game',
 		screenshots: [ //TODO
@@ -227,9 +219,7 @@ const items: Array<Project> = [
 				{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Scramblecoin,
 		name: 'Scramblecoin Web Game',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Web Game',
 		screenshots: [ //TODO
@@ -262,9 +252,7 @@ const items: Array<Project> = [
 				{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.ZombieApocalypse,
 		name: 'Strategy Web Game',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Web Game',
 		screenshots: [ //TODO
@@ -297,9 +285,7 @@ const items: Array<Project> = [
 				{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Stardew,
 		name: 'Idle Web Game',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Web Game',
 		screenshots: [ //TODO
@@ -328,9 +314,7 @@ const items: Array<Project> = [
 		links: [{ to: 'https://github.com/alessioamo/SOEN387-A1', label: 'GitHub Repo' }],
 		logo: Assets.Commerce,
 		name: 'Commerce Website',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'html', 'css', 'java', 'mysql', 'bootstrap', 'github'),
 		type: 'Website',
 		screenshots: [
@@ -362,9 +346,7 @@ const items: Array<Project> = [
 		links: [{ to: 'https://github.com/alessioamo/Family-Feud', label: 'GitHub Repo' }],
 		logo: Assets.FamilyFeud,
 		name: 'Family Feud Game',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Website',
 		screenshots: [
@@ -403,9 +385,7 @@ const items: Array<Project> = [
 		links: [{ to: 'https://github.com/alessioamo/Jeopardy', label: 'GitHub Repo' }],
 		logo: Assets.Jeopardy,
 		name: 'Jeopardy Game',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Website',
 		screenshots: [
@@ -433,9 +413,7 @@ const items: Array<Project> = [
 		links: [{ to: 'https://github.com/alessioamo/ETERNITY-Calculator', label: 'GitHub Repo' }],
 		logo: Assets.Calculator,
 		name: 'Python Scientific Calculator',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('python', 'github', 'vscode'),
 		type: 'Application',
 		screenshots: [
@@ -463,9 +441,7 @@ const items: Array<Project> = [
 		links: [{ to: 'https://github.com/alessioamo/Concordia-For-Students', label: 'GitHub Repo' }],
 		logo: Assets.Concordia,
 		name: 'Recreated School Application',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('kotlin', 'java', 'figma', 'androidstudio', 'vscode'),
 		type: 'Mobile Application',
 		screenshots: [
@@ -505,9 +481,7 @@ const items: Array<Project> = [
 		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Unity,
 		name: 'Side Scrolling Platformer Game',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('csharp', 'unity', 'github', 'vscode'),
 		type: 'Video Game',
 		screenshots: [ //TODO
@@ -531,9 +505,7 @@ const items: Array<Project> = [
 		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Chess,
 		name: 'Chess Minigame',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'html', 'css', 'bootstrap', 'github', 'vscode'),
 		type: 'Web Game',
 		screenshots: [
@@ -553,9 +525,7 @@ const items: Array<Project> = [
 		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Grocery,
 		name: 'Grocery Store Website',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'html', 'css', 'mysql', 'php', 'bootstrap', 'github'),
 		type: 'Website',
 		screenshots: [
@@ -591,9 +561,7 @@ const items: Array<Project> = [
 		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Risk,
 		name: 'Risk Game',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('cpp', 'github', 'vscode'),
 		type: 'Game Application',
 		screenshots: [ //TODO
@@ -613,9 +581,7 @@ const items: Array<Project> = [
 		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Battleship,
 		name: 'Battleship Game',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('java', 'github', 'eclipse'),
 		type: 'Game Application',
 		screenshots: [ //TODO
@@ -635,9 +601,7 @@ const items: Array<Project> = [
 		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Discord,
 		name: 'Discord Bot',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('js', 'nodejs', 'github', 'vscode'),
 		type: 'Bot',
 		screenshots: [
@@ -666,9 +630,7 @@ const items: Array<Project> = [
 				{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Reddit,
 		name: 'Reddit Bot',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('python', 'github', 'vscode'),
 		type: 'Bot',
 		screenshots: [
@@ -696,9 +658,7 @@ const items: Array<Project> = [
 		links: [{ to: '', label: 'GitHub Repo' }], //TODO
 		logo: Assets.Stardew,
 		name: 'Stardew Valley Animal Mod',
-		period: {
-			from: new Date(2018, 8, 1), to: new Date(2020, 8, 1) //TODO
-		},
+		period: { from: new Date(2024, 1), to: new Date(2024, 1) },
 		skills: getSkills('csharp', 'github', 'vscode'),
 		type: 'Video Game Mod',
 		screenshots: [ //TODO
