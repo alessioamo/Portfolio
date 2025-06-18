@@ -15,7 +15,7 @@ const hero: {
 		'feel free to explore the sections that are complete!',
 	links: [
 		{ label: 'GitHub', href: 'https://github.com/alessioamo', icon: 'i-carbon-logo-github' },
-		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/alessio-amorelli-9702211aa/', icon: 'i-carbon-logo-linkedin' }
+		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/alessio-amorelli', icon: 'i-carbon-logo-linkedin' }
 	]
 };
 
